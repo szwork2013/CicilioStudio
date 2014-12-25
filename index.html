@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="homeApp">
 <head lang="en">
-    <meta charset="UTF-8">
     <title>Cicilio Studio</title>
-    <script src="Dependancy/angular.min.js"></script>
-    <script src="Dependancy/angular-route.min.js"></script>
-
-
-    <script>
-        var START_URL = "https://ciciliostudio.com";
-        var homeApp = angular.module('homeApp',['ngRoute']);
-
-        homeApp.config(function($routeProvider) {
-            $routeProvider.
-                    when('/', {
-                        template: '<h1> Cicilio Studio </h1>',
-                        controller: 'homeController'
-                    });
-        });
-
-        homeApp.controller('homeController', function ($scope, $location, $window) {
-            //Script from Andrej on http://stackoverflow.com/questions/22689543 Helped a lot
-
-            if ($location != undefined){
-                console.log("Here");
-                console.log("Pre: "+$location.protocol);
-                if ($location.protocol() != "https" && $location.$$host != "localhost") {
-                    $window.location.protocol = "https";
-                };
-            };
-        });
-
-    </script>
+    <meta charset="UTF-8">
+    <script src="Dependancy/angular.js"></script>
+    <script src="Dependancy/angular-route.js"></script>
+    <script src="app.js"> </script>
 </head>
 <body>
     <div ng-view></div>

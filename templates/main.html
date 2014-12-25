@@ -1,0 +1,13 @@
+<div> Hello World </div>
+
+<div ng-style="style.css" ng-init="items = [
+    {name: 'Projects'},
+    {name: 'Google Application Lesson Plan'},
+    {name: 'Computer Security Lesson Plan'},
+    {name: 'Bio'}
+]">
+    <ul ng-repeat="item in items">
+        {{item.name}}
+    </ul>
+
+</div>
