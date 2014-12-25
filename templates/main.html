@@ -1,13 +1,16 @@
-<div> Hello World </div>
-
-<div ng-style="style.css" ng-init="items = [
+<script src="nav.js"></script>
+<div class="nav" ng-init="items = [
     {name: 'Projects'},
     {name: 'Google Application Lesson Plan'},
     {name: 'Computer Security Lesson Plan'},
     {name: 'Bio'}
 ]">
-    <ul ng-repeat="item in items">
-        {{item.name}}
-    </ul>
+    <div>
+        <ul>
+            <li ng-repeat="item in items">
+                <a href="" onclick="direct()">{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
 
 </div>

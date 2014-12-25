@@ -1319,7 +1319,7 @@
      }
      GoodController2.$inject = ['$scope'];
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      div[ng-controller] {
        margin-bottom: 1em;
        -webkit-border-radius: 4px;
@@ -4239,7 +4239,7 @@
                };
              }]);
          </file>
-         <file name="style.css">
+         <file name="styles.css">
          #scrollArea {
            height: 280px;
            overflow: auto;
@@ -4290,7 +4290,7 @@
              }
          ]);
          </file>
-         <file name="style.css">
+         <file name="styles.css">
          body {
            padding-top: 50px;
          }
@@ -5325,7 +5325,7 @@
            };
          }]);
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      p {
          margin: 10px 0 3px;
        }
@@ -20046,7 +20046,7 @@
      * that content using the `$sce` service.
      *
      * <example name="NgModelController" module="customControl" deps="angular-sanitize.js">
-     <file name="style.css">
+     <file name="styles.css">
      [contenteditable] {
         border: 1px solid black;
         background-color: white;
@@ -21924,7 +21924,7 @@
      <input ng-model="style2" placeholder="Type: bold, strike or red"><br>
      <input ng-model="style3" placeholder="Type: bold, strike or red"><br>
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      .strike {
          text-decoration: line-through;
        }
@@ -21978,7 +21978,7 @@
      <br>
      <span class="base-class" ng-class="myVar">Sample Text</span>
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      .base-class {
          -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
          transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
@@ -22045,7 +22045,7 @@
      </li>
      </ol>
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      .odd {
          color: red;
        }
@@ -22093,7 +22093,7 @@
      </li>
      </ol>
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      .odd {
          color: red;
        }
@@ -24604,7 +24604,7 @@
      <span ng-style="myStyle">Sample Text</span>
      <pre>myStyle={{myStyle}}</pre>
      </file>
-     <file name="style.css">
+     <file name="styles.css">
      span {
          color: black;
        }

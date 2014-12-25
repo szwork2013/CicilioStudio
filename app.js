@@ -9,14 +9,18 @@ homeApp.config(['$routeProvider', function($routeProvider){
         when('/', {
             templateUrl: 'templates/main.html',
             //template: '<div> test </div>',
-            controller: 'homeCtrl'
+            controller: 'defaultCtrl'
+        }).
+        when('/projects',{
+            templateUrl: 'templates/projects.html',
+            controller: 'defaultCtrl'
         }).
         otherwise({
             redirectTo: "/"
         });
 }]);
 
-homeApp.controller('homeCtrl', function ($scope, $location, $window, $routeParams) {
+homeApp.controller('defaultCtrl', function ($scope, $location, $window, $routeParams) {
     $scope.message = "Display Please";
     //$scope.params = $routeParams.params;
     //$window.location.assign('main.html');

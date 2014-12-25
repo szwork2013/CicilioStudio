@@ -1,0 +1,42 @@
+/* CSS Template */
+@font-face {
+    font-family: LibreBaskerville;
+    src: url(Dependancy/Libre%20Baskerville%20v1.0/LibreBaskerville-Regular.ttf);
+}
+
+/* Nav Bar */
+.nav {
+    margin-left: 0;
+    float: left;
+}
+.nav div{
+    background: deepskyblue;
+}
+.nav ul{
+    background: #474747;
+    list-style: none;
+    align-self: flex-end;
+    width: 250px;
+
+}
+
+.nav li{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.nav a{
+    margin-left: 0;
+    padding: 0;
+    font-family: LibreBaskerville;
+    font-size: 20px;
+    color: skyblue;
+    text-align: left;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: white;
+    width: 100px;
+}
+
