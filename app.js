@@ -22,16 +22,12 @@ homeApp.config(['$routeProvider', function($routeProvider){
 
 homeApp.controller('defaultCtrl', function ($scope, $location, $window, $routeParams) {
     $scope.message = "Display Please";
-    //$scope.params = $routeParams.params;
-    //$window.location.assign('main.html');
-    //Script from Andrej on http://stackoverflow.com/questions/22689543 Helped a lot
-    /*
-     if ($location != undefined){
-     console.log("Here");
-     console.log("Pre: "+$location.protocol);
-     if ($location.protocol() != "https" && $location.$$host != "localhost") {
-     $window.location.protocol = "https";
-     };
-     };
-     */
+
+});
+homeApp.controller('navCtrl', function ($scope){
+   $scope.items = [
+       {name: 'Projects', sources:['Arduino', 'Music', 'Trebuchet']},
+       {name: 'Lesson Plans', sources: ['Google Applications', 'Computer Security']},
+       {name: 'Bio', sources:[]}
+   ];
 });

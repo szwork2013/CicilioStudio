@@ -7,12 +7,16 @@
 /* Nav Bar */
 .nav {
     margin-left: 0;
-    float: left;
+    padding: 0;
+    color: skyblue;
+    text-align: left;
+    text-decoration: none;
 }
 .nav div{
-    background: deepskyblue;
+
 }
 .nav ul{
+    float: left;
     background: #474747;
     list-style: none;
     align-self: flex-end;
@@ -20,23 +24,77 @@
 
 }
 
+
 .nav li{
     border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    background: #474747;
     padding: 10px;
+    width: 250px;
+    text-decoration: none;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+    display: inline-block;
+    /*width: 250px;*/
 }
 
+.nav li:hover{
+    width: 300px;
+}
+
+.hidden {
+
+}
+
+.nav_items {
+    width: 250px;
+    font-family: LibreBaskerville;
+    font-size: 20px;
+    width: 250px;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    visibility: visible;
+}
+
+.nav_sources {
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    font-size: 15px;
+    visibility: hidden;
+    height: 0px;
+    display: block;
+}
+
+li a{
+    -webkit-transition: height .5s;
+    transition: height .5s;
+}
+
+li:hover a{
+    height: 30px;
+    visibility: visible;
+}
+/*
+
 .nav a{
+    float: left;
     margin-left: 0;
     padding: 0;
     font-family: LibreBaskerville;
     font-size: 20px;
+    width: 250px;
     color: skyblue;
     text-align: left;
-    text-decoration: none;
-}
-.nav a:hover{
-    color: white;
-    width: 100px;
+
+
+
+
 }
 
+
+.nav a:hover{
+    color: white;
+    width: 300px;
+}
+*/
