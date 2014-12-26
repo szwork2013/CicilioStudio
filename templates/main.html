@@ -1,11 +1,11 @@
 <script src="nav.js"></script>
 <div class="nav" ng-controller="navCtrl">
         <ul>
-            <li id="list1" ng-repeat="item in items">
+            <li class="extend" id="list1" ng-repeat="item in items">
                 <div>
                     <a class="nav_items" id="navItem{{name}}" href="" onclick="test()">{{item.name}}</a>
                     <div ng-repeat="source in item.sources">
-                        <a id="navSource{{source}}" class="nav_sources">{{source}}</a>
+                        <a href="" id="navSource{{source}}" class="nav_sources">{{source}}</a>
                     </div>
                 </div>
             </li>
