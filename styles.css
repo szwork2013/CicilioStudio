@@ -16,7 +16,7 @@
 
 .nav ul{
     float: left;
-    background: #474747;
+    /*background: #474747;*/
     list-style: none;
     align-self: flex-end;
     width:inherit;
@@ -64,8 +64,8 @@
 
 
 .source_container{
-    -webkit-transition: height .2s;
-    transition: height .2s;
+    -webkit-transition: height .4s;
+    transition: height .4s;
 
 }
 
@@ -90,8 +90,8 @@ li:hover .source_container{
 li .nav_sources{
     height: 0px;
     opacity: 0;
-    -webkit-transition: height .5s, opacity .5s;
-    transition: height .5s, opacity .5s;
+    -webkit-transition: height .4s, opacity .4s;
+    transition: height .4s, opacity .4s;
 }
 
 li:hover .nav_sources{
