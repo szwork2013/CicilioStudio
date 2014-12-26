@@ -63,7 +63,7 @@
 }
 
 .nav_sources {
-
+    padding-top: 5px;
     color: inherit;
     text-align: inherit;
     text-decoration: inherit;
@@ -71,11 +71,9 @@
     visibility: hidden;
     height: 0px;
     display: block;
+
 }
 
-a:hover {
-    color: white;
-}
 
 li .nav_sources{
     -webkit-transition: height .5s;
@@ -86,6 +84,11 @@ li:hover .nav_sources{
     height: 30px;
     /*change from transparent to full alpha*/
     visibility: visible;
+    display: block;
+}
+
+a:hover {
+    color: white;
 }
 /*
 
