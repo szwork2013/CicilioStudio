@@ -3,9 +3,9 @@
         <ul>
             <li class="extend" id="list1" ng-repeat="item in items">
                 <div>
-                    <a class="nav_items" id="navItem{{name}}" href="" onclick="test()">{{item.name}}</a>
+                    <a class="nav_items" id="{{name}}" ng-click="$scope.go(name)" href="" onclick="test()">{{item.name}}</a>
                     <div class="source_container">
-                        <a ng-repeat="source in item.sources" href="" id="navSource{{source}}" class="nav_sources">{{source}}</a>
+                        <a ng-repeat="source in item.sources" href="" id="{{source}}" ng-click="$scope.go(item,source)" onclick="testRoute(this)" class="nav_sources">{{source}}</a>
                     </div>
                 </div>
             </li>

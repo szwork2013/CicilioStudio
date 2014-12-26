@@ -11,8 +11,12 @@ homeApp.config(['$routeProvider', function($routeProvider){
             //template: '<div> test </div>',
             controller: 'defaultCtrl'
         }).
-        when('/projects',{
-            templateUrl: 'templates/projects.html',
+        when('/Projects',{
+            templateUrl: 'templates/test.html',
+            controller: 'defaultCtrl'
+        }).
+        when('/ProjectsArduino',{
+            templateUrl: 'templates/test.html',
             controller: 'defaultCtrl'
         }).
         otherwise({
@@ -24,10 +28,23 @@ homeApp.controller('defaultCtrl', function ($scope, $location, $window, $routePa
     $scope.message = "Display Please";
 
 });
-homeApp.controller('navCtrl', function ($scope){
+homeApp.controller('navCtrl', function ($scope,$location){
    $scope.items = [
        {name: 'Projects', sources:['Arduino', 'Music', 'Trebuchet']},
        {name: 'Lesson Plans', sources: ['Google Applications', 'Computer Security']},
        {name: 'Bio', sources:[]}
    ];
+
+    $scope.go = function(item){
+        var path = "#/" + item.toString().trim();
+        console.log(path);
+        $location.path(path);
+    }
+    $scope.go = function(item,source){
+        var path = "#/" + item.toString().trim() + source.toString();
+        console.log(path);
+        $location.path(path);
+    }
+
+
 });

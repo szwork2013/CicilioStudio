@@ -64,8 +64,8 @@
 
 
 .source_container{
-    -webkit-transition: height .4s;
-    transition: height .4s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
 
 }
 
@@ -90,8 +90,8 @@ li:hover .source_container{
 li .nav_sources{
     height: 0px;
     opacity: 0;
-    -webkit-transition: height .4s, opacity .4s;
-    transition: height .4s, opacity .4s;
+    -webkit-transition: height .5s, opacity .5s;
+    transition: height .5s, opacity .5s;
 }
 
 li:hover .nav_sources{
