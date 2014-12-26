@@ -4,8 +4,8 @@
             <li class="extend" id="list1" ng-repeat="item in items">
                 <div>
                     <a class="nav_items" id="navItem{{name}}" href="" onclick="test()">{{item.name}}</a>
-                    <div ng-repeat="source in item.sources">
-                        <a href="" id="navSource{{source}}" class="nav_sources">{{source}}</a>
+                    <div class="source_container">
+                        <a ng-repeat="source in item.sources" href="" id="navSource{{source}}" class="nav_sources">{{source}}</a>
                     </div>
                 </div>
             </li>

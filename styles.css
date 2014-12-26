@@ -62,6 +62,18 @@
     visibility: visible;
 }
 
+
+.source_container{
+    margin-top: 5px;
+    height: 0px;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+}
+
+li:hover .source_container{
+    height: 90px; /* The height of the containerFixed for now */
+}
+
 .nav_sources {
     padding-top: 5px;
     color: inherit;
@@ -75,13 +87,15 @@
 
 }
 
-
 li .nav_sources{
-    -webkit-transition: height .5s;
-    transition: height .5s;
+    opacity: 0;
+    -webkit-transition: height .5s, opacity .5s;
+    transition: height .5s, opacity .5s;
+
 }
 
 li:hover .nav_sources{
+    opacity: 1;
     height: 30px;
     /*change from transparent to full alpha*/
     visibility: visible;
