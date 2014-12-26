@@ -71,6 +71,7 @@
     visibility: hidden;
     height: 0px;
     display: block;
+    text-indent: 20px;
 
 }
 
@@ -90,26 +91,3 @@ li:hover .nav_sources{
 a:hover {
     color: white;
 }
-/*
-
-.nav a{
-    float: left;
-    margin-left: 0;
-    padding: 0;
-    font-family: LibreBaskerville;
-    font-size: 20px;
-    width: 250px;
-    color: skyblue;
-    text-align: left;
-
-
-
-
-}
-
-
-.nav a:hover{
-    color: white;
-    width: 300px;
-}
-*/
