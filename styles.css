@@ -16,7 +16,7 @@
 
 .nav ul{
     float: left;
-    /*background: #474747;*/
+    background: #474747;
     list-style: none;
     align-self: flex-end;
     width:inherit;
