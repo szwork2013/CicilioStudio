@@ -15,7 +15,7 @@ homeApp.config(['$routeProvider', function($routeProvider){
             templateUrl: 'templates/test.html',
             controller: 'defaultCtrl'
         }).
-        when('/ProjectsArduino',{
+        when('/Projects/Arduino',{
             templateUrl: 'templates/test.html',
             controller: 'defaultCtrl'
         }).
