@@ -1,14 +1,10 @@
-<script src="nav.js"></script>
 <div class="nav" ng-controller="navCtrl">
         <ul>
-            <li class="extend" id="list1" ng-repeat="item in items">
-                <div>
-                    <a class="nav_items" id="{{name}}" ng-click="$scope.go(name)" href="" onclick="test()">{{item.name}}</a>
+            <li class="extend" id="list1" ng-model="$scope.items" ng-repeat="item in items">
+                    <a class="nav_items" href="" ng-click="testRoute(item.name)">{{item.name}}</a>
                     <div class="source_container">
-                        <a ng-repeat="source in item.sources" href="" id="{{source}}" ng-click="$scope.go(item,source)" onclick="testRoute(this)" class="nav_sources">{{source}}</a>
-                    </div>
+                        <a ng-repeat="source in item.sources" href="" ng-href="{{getHref(item.name,source)}}" ng-click="testRoute(item.name,source)" class="nav_sources">{{source}}</a>
                 </div>
             </li>
         </ul>
-
 </div>
