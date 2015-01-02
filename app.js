@@ -24,7 +24,7 @@ homeApp.config(['$routeProvider', function($routeProvider){
         });
 }]);
 
-homeApp.controller('defaultCtrl', function ($scope, $location, $window, $routeParams) {
+homeApp.controller('defaultCtrl', function ($scope) {
     $scope.message = "Display Please";
 
 });
@@ -77,17 +77,6 @@ homeApp.controller('navCtrl', function ($scope,$location){
             console.log(nameAns + '/' + source.toString().replace(' ',''));
             return nameAns + '/' + source.toString().replace(' ','');
         };
-    };
-
-    $scope.go = function(item){
-        var path = "#/" + item.toString().trim();
-        console.log(path);
-        $location.path(path);
-    };
-    $scope.go = function(item,source){
-        var path = "#/" + item.toString().trim() + source.toString();
-        console.log(path);
-        $location.path(path);
     };
 
 
