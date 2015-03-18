@@ -7,7 +7,7 @@ var homeApp = angular.module('homeApp',['ngRoute']);
 homeApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.
         when('/', {
-            templateUrl: 'templates/main.html',
+            templateUrl: 'templates/nav.html',
             //template: '<div> test </div>',
             controller: 'defaultCtrl'
         }).
@@ -24,8 +24,27 @@ homeApp.config(['$routeProvider', function($routeProvider){
         });
 }]);
 
-homeApp.controller('defaultCtrl', function ($scope) {
+homeApp.controller('defaultCtrl', function ($scope,$http,$sce) {
     $scope.message = "Display Please";
+
+    /**
+     * This takes an HTML file, grabs it from the server,
+     * trusts it, returns the data in the file.
+     * Use with ng-bind-html
+     * @param filename - String - HTML filename to load
+     */
+
+
+    $scope.loadPage = function(filename) {
+        var htmlDir = "pages/" + filename + ".html";
+        console.log(htmlDir);
+        $http.get(htmlDir).success(function (response) {
+            return $sce.trustAsHtml(response);
+        }).error(function (data) {
+            console.log('Error');
+            console.log(data);
+        });
+    };
 
 });
 homeApp.controller('navCtrl', function ($scope,$location){
