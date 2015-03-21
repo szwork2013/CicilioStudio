@@ -1,0 +1,22 @@
+
+
+#navBar ul {
+    list-style-type: none;
+    background-color: darkblue;
+}
+
+#navBar li {
+    display: inline;
+    font-family: georgia;
+    font-size: x-large;
+}
+
+#navBar li a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+#navBar li a:hover {
+    color: white;
+    text-decoration: underline;
+}
