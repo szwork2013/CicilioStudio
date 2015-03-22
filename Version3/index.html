@@ -8,12 +8,13 @@
     <script src="main.js"></script>
     <title>Cicilio Studio</title>
 </head>
+
 <body>
     <div id="nav-holder" class="container">
         <div id="navBar" class="navBar">
             <ul class="main-menu">
                 <li class="menu-item"><a href="index.html">Cicilio Studio</a></li>
-                <li class="menu-item" onclick="loadHtml('Projects/projects.html')">
+                <li class="menu-item" onclick="showTag('#projects')">
                     <a href=""> Projects </a>
                     <ul class="sub-menu">
                         <div class="sub-menu-item">
@@ -34,22 +35,26 @@
         </div>
     </div>
 
-    <div id="display" class="display">
-        <script type="javascript">
-            $("#display").load("Projects/projects.html", function(){
-                console.log("worked");
-            });
+    <section id="content">
+        <div id="display" class="display"></div>
+
+        <div id="home" class="home">
+            Home Home Home
+        </div>
+
+        <div>
+            TEST TEST
+        </div>
+
+        <div id="projects" class="projects">
+            This is a test with jquery
+        </div>
+
+        <script>
+
         </script>
-    </div>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <div>test</div>
+
+        <div>test</div>
+    </section>
 </body>
 </html>

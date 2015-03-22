@@ -1,9 +1,15 @@
 
 
+
 body {
     background-color: #CCCCCC;
     margin: 0px;
     text-align: left;
+    height: 1000px;
+}
+
+#content {
+    padding-top: 100px;
 }
 
 #nav-holder {
@@ -86,6 +92,12 @@ body {
     margin: 0;
     line-height: normal;
     list-style: none;
+}
+
+
+.projects {
+    visibility: hidden;
+    display: none;
 }
 
 

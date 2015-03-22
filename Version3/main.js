@@ -17,6 +17,17 @@ loadHtml = function(dir){
         console.log("Load Happened");
     });
 };
+
+showTag = function(id){
+    $(id).css(
+        "visibility","visible"
+    );
+    $(id).css(
+        "display","block"
+    );
+    console.log("showTag");
+};
+
 /*
 $(function(){
     //$("#navBar").css("font-size",
