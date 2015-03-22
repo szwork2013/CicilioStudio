@@ -12,6 +12,11 @@ floatNav = function() {
     });
 };
 
+loadHtml = function(dir){
+    $("#display").load(dir,function(){
+        console.log("Load Happened");
+    });
+};
 /*
 $(function(){
     //$("#navBar").css("font-size",
