@@ -63,7 +63,12 @@ body {
     -o-transition-duration: .5s;
 }
 
-#navBar ul li a {
+#main-menu {
+    display: inline;
+}
+
+#navBar ul li{
+    display: inline;
     color: #74AAF7;
     width: 100%;
     height: 100%;
