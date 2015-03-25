@@ -13,8 +13,8 @@
     <div id="nav-holder" class="container">
         <div id="navBar" class="navBar">
             <ul class="main-menu">
-                <li class="menu-item" onclick="loadHtml('main.html')">Cicilio Studio</li>
-                <li class="menu-item" onclick="loadHtml('Projects/projects.html')">
+                <li class="menu-item" onclick="goToTag('#home')" href="#">Cicilio Studio</li>
+                <li class="menu-item" onclick="goToTag('#projects')" href="#">
                     Projects
                     <ul class="sub-menu">
                         <div class="sub-menu-item">
@@ -30,13 +30,14 @@
                         </div>
                     </ul>
                 </li>
-                <li><a></a></li>
+                <li>Courses</li>
             </ul>
         </div>
     </div>
 
     <section id="content">
-        <div id="display" class="display"></div>
+        <div id="display" class="display">
+        </div>
 
         <div id="home" class="home">
             Home Home Home
@@ -50,7 +51,9 @@
             This is a test with jquery
         </div>
 
-        <div>test</div>
+        <div>
+            test
+        </div>
     </section>
 </body>
 </html>

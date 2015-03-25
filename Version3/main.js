@@ -2,6 +2,8 @@
  * Created by Lance on 3/21/2015.
  */
 
+var currentTag = '#main';
+
 floatNav = function() {
     console.log("test");
     //var k = window.onscroll();
@@ -10,6 +12,18 @@ floatNav = function() {
        //$("a").css("color", "red");
        console.log("test 2");
     });
+};
+
+
+goToTag = function(scrollToID){
+  var spacing = $("#content").css("margin-top");
+  var spacingNum = parseInt(spacing);
+  console.log(spacingNum);
+  $('html, body').animate({
+      scrollTop: $(scrollToID).offset().top - spacingNum
+  }, 1000,0,function(){
+      console.log("scrolled");
+  });
 };
 
 loadHtml = function(dir){
@@ -24,6 +38,16 @@ showTag = function(id){
     );
     $(id).css(
         "display","block"
+    );
+    console.log("showTag");
+};
+
+hideTag = function(id){
+    $(id).css(
+        "visibility","hidden"
+    );
+    $(id).css(
+        "display","none"
     );
     console.log("showTag");
 };
