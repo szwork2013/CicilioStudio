@@ -2,7 +2,8 @@
 
 
 body {
-    background-color: #CCCCCC;
+
+    background-color: black;
     margin: 0px;
     text-align: left;
     height: 1000px;
@@ -15,26 +16,46 @@ body {
     /*padding-top: 100px;*/
     margin: 100px 0 0 0;
     text-align: center;
-
 }
 
-#content *{
+#content .main_section{
     width: 70%;
     margin-bottom: 70px;
     margin-right: auto;
     margin-left: auto;
     padding: 15px;
-    background-color: white;
-    border: 2px solid #ababab;
+    background-color: #E0EFF1;
+    border: 2px solid #7DB4B5;
 
-    -webkit-box-shadow: 5px 7px 5px 0px #ababab;
-    -moz-box-shadow: 5px 7px 5px 0px #ababab;
-    box-shadow: 5px 7px 5px 0px #ababab;
+    -webkit-box-shadow: 5px 7px 5px 0px #7DB4B5;
+    -moz-box-shadow: 5px 7px 5px 0px #7DB4B5;
+    box-shadow: 5px 7px 5px 0px #7DB4B5;
 }
 
+#content img{
+    padding: 0;
+    margin: 0;
+    border: 2px solid darkblue;
+    align: middle;
+    max-height: 800px;
+    max-width: 800px;
+
+    -webkit-box-shadow: 0px 0px 0px 0px black;
+    -moz-box-shadow: 0px 0px 0px 0px black;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+#content h1{
+    font-size: 50px;
+    font-family: LibreBaskerville;
+}
+
+
 #nav-holder {
+
     /*background-color: #293E6A;*/
-    background-color: #293E6A;
+    
+    
     margin: 0px;
     top: 0;
     width: 100%;
@@ -44,11 +65,16 @@ body {
 }
 
 #navBar{
-    background-color: #293E6A;
+    background: linear-gradient(#293E6A, #680148);
+    background: -webkit-linear-gradient(#293E6A, #680148);
+    background: -moz-linear-gradient(#293E6A, #680148);
+    background: -o-linear-gradient(#293E6A, #680148);
+
+    color: white;
     text-align: left;
     width: auto;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 24px;
     cursor: default;
 }
 
