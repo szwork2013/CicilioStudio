@@ -26,6 +26,14 @@ goToTag = function(scrollToID){
   });
 };
 
+goToStart = function(scrollToID){
+    $('html, body').animate({
+        scrollTop: $(scrollToID).offset().bottom
+    }, 1000,0,function(){
+        console.log("scrolled");
+    });
+};
+
 loadHtml = function(dir){
     $("#display").load(dir,function(){
         console.log("Load Happened");
