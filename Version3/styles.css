@@ -41,7 +41,7 @@ body {
     */
     background-color: #121211;
     /* #5F7FC2 */
-    border-bottom: 2px solid #3B5998;
+    /* border-bottom: 2px solid #3B5998; */
 /*
     -webkit-box-shadow: 5px 7px 5px 0px #686C6E;
     -moz-box-shadow: 5px 7px 5px 0px #686C6E;
@@ -73,10 +73,17 @@ body {
     text-shadow: 2px 2px black;
 }
 
+.panels{
+    width: 70%;
+    padding: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .panels td{
     padding-right: 4px;
-    margin: 0;
+    padding: 40px;
+    margin: 20px;
 }
 
 .panels img{
@@ -84,6 +91,42 @@ body {
     margin: 0;
     border: 2px solid #3D4047;
     vertical-align: bottom;
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+.panels img:hover{
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+.panels .short_des{
+    display: none;
+    visibility: hidden;
+    width: inherit;
+    position: absolute;
+    background-color:rgba(20,20,20,.5);
+}
+
+.panels .panel_container{
+    margin: 0;
+    padding: 0;
+}
+
+.panels .panel_container:hover .short_des{
+    display: inline-block;
+    visibility: visible;
+    top: inherit;
 }
 
 

@@ -61,6 +61,21 @@ hideTag = function(id){
 };
 
 /*
+Pre: When is being hovered.
+Display the short description below in an
+ absolute position.
+ */
+
+displaySD = function(id){
+    var child = $(id).children(".short_des");
+    var posTop = $.(id).position().top();
+    console.log("Pos Top: " + posTop);
+    child.css(
+        "top",(posTop + 20)
+    );
+};
+
+/*
 $(function(){
     //$("#navBar").css("font-size",
       //  function () {
