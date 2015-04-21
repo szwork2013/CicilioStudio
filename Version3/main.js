@@ -83,30 +83,28 @@ displaySD = function(id){
  */
 overlaySD = function(id){
     var ID = "#" + id.toString();
-    var child = $(id).children("div"); // Child[0] is the .short_des
-    var parentTop = $(id).position();
-    $(child[0]).css(
-        "top",parentTop.top
-    );
-    $(child[0]).css(
-        "bottom",parentTop.bottom
-    );
-    $(child[0]).css(
-        "right",parentTop.right
-    );
-    $(child[0]).css(
-        "left",parentTop.left
-    );
-    $(child[0]).css(
-        "width",$(id).width()
-    );
-    $(child[0]).css(
-        "height",$(id).height()
-    );
-    console.log(parentTop);
-    console.log(parentTop.top);
-    console.log(child[0]);
-    console.log("Test Worked");
+    var childImg = $(id).children("img");
+    console.log("HERE");
+    console.log(childImg[0]);
+    $(childImg[0]).animate({
+        transform: 'scale(1.25)'
+    });
+
+        var child = $(id).children("div"); // Child[0] is the .short_des
+        var parentTop = $(id).position();
+        $(child[0]).css({
+            "top": parentTop.top,
+            "bottom": parentTop.bottom,
+            "right": parentTop.right,
+            "left": parentTop.left,
+            "width": $(id).width(),
+            "height": $(id).height()
+        });
+
+        console.log(parentTop);
+        console.log(parentTop.top);
+        console.log(child[0]);
+        console.log("Test Worked");
 };
 
 /*
