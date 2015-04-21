@@ -75,43 +75,74 @@ displaySD = function(id){
     );
 };
 
+/*
+Sets the .short_des overlay properties correctly
+ */
+overlaySD = function(){
+
+    var child = $(".panel_container").children("div");
+    var childImg = $(".panel_container").children("img");
+    var imgPos = $(childImg[0]).position();
+    var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
+    console.log($(".panel_container"));
+    console.log(child);
+    console.log(childImg);
+    $(child[0]).css({
+        "top": imgPos.top,
+        "bottom": imgPos.bottom,
+        "right": imgPos.right,
+        "left": imgPos.left+imgBorderOffset,
+        "width": ($(childImg[0]).width())*1.25,
+        "height": ($(childImg[0]).height()+imgBorderOffset)*1.25
+    });
+};
 /**
  * Displays short description on
  * to of the image with a semi
  * transparent background.
  * @param id - .panel_container
  */
-overlaySD = function(id){
-    var ID = "#" + id.toString();
+animatePanel = function(id){
     var childImg = $(id).children("img");
+    var shortDes = $(id).children("div");
     console.log("HERE");
     console.log(childImg[0]);
     $(childImg[0]).animate({
-        transform: 'scale(1.25)'
-    }, 1000
+            height: ($(childImg).height()*1.25),
+            width: ($(childImg).width()*1.25)
+    }, 500, "swing", function(){
+            $(shortDes[0]).css({
+                "display": "inline-block",
+                "visibility": "visible"
+            });
+        }
     );
-
-    $(id).animate({
-        transform: 'scale(1.25)'
-    }, 1000
-    );
-
-        var child = $(id).children("div"); // Child[0] is the .short_des
-        var parentTop = $(id).position();
-        var imgPos = $(childImg[0]).position();
-        var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
-        $(child[0]).css({
-            "top": imgPos.top,
-            "bottom": imgPos.bottom,
-            "right": imgPos.right,
-            "left": imgPos.left+imgBorderOffset,
-            "width": $(childImg[0]).width(),
-            "height": $(childImg[0]).height()+imgBorderOffset
-        });
-
+        console.log(shortDes[0]);
         console.log(childImg[0]);
-        console.log("Border-Width: " + imgBorderOffset);
         console.log("Test Worked");
+};
+
+/**
+ * This reverses the effects of animatePanel
+ */
+animatePanelR = function(id){
+    var ID = "#" + id.toString();
+    var childImg = $(id).children("img");
+    var shortDes = $(id).children("div");
+    $(shortDes[0]).css({
+        "display": "none",
+        "visibility": "hidden"
+    });
+    console.log("HERE");
+    console.log(childImg[0]);
+    $(childImg[0]).animate({
+            height: ($(childImg).height()*0.75),
+            width: ($(childImg).width() *0.75)
+        }, 500, "swing"
+    );
+    console.log(shortDes[0]);
+    console.log(childImg[0]);
+    console.log("Test Worked");
 };
 
 /*
