@@ -75,7 +75,7 @@ body {
 
 .panels{
     width: 70%;
-    padding: 50px;
+    padding: 40px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -113,7 +113,6 @@ body {
 .panels .short_des{
     display: none;
     visibility: hidden;
-    width: inherit;
     position: absolute;
     background-color:rgba(20,20,20,.5);
 }
@@ -126,7 +125,6 @@ body {
 .panels .panel_container:hover .short_des{
     display: inline-block;
     visibility: visible;
-    top: inherit;
 }
 
 

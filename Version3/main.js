@@ -68,11 +68,45 @@ Display the short description below in an
 
 displaySD = function(id){
     var child = $(id).children(".short_des");
-    var posTop = $.(id).position().top();
+    var posTop = $(id).position().top;
     console.log("Pos Top: " + posTop);
     child.css(
         "top",(posTop + 20)
     );
+};
+
+/**
+ * Displays short description on
+ * to of the image with a semi
+ * transparent background.
+ * @param id - .panel_container
+ */
+overlaySD = function(id){
+    var ID = "#" + id.toString();
+    var child = $(id).children("div"); // Child[0] is the .short_des
+    var parentTop = $(id).position();
+    $(child[0]).css(
+        "top",parentTop.top
+    );
+    $(child[0]).css(
+        "bottom",parentTop.bottom
+    );
+    $(child[0]).css(
+        "right",parentTop.right
+    );
+    $(child[0]).css(
+        "left",parentTop.left
+    );
+    $(child[0]).css(
+        "width",$(id).width()
+    );
+    $(child[0]).css(
+        "height",$(id).height()
+    );
+    console.log(parentTop);
+    console.log(parentTop.top);
+    console.log(child[0]);
+    console.log("Test Worked");
 };
 
 /*
