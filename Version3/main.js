@@ -88,22 +88,29 @@ overlaySD = function(id){
     console.log(childImg[0]);
     $(childImg[0]).animate({
         transform: 'scale(1.25)'
-    });
+    }, 1000
+    );
+
+    $(id).animate({
+        transform: 'scale(1.25)'
+    }, 1000
+    );
 
         var child = $(id).children("div"); // Child[0] is the .short_des
         var parentTop = $(id).position();
+        var imgPos = $(childImg[0]).position();
+        var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
         $(child[0]).css({
-            "top": parentTop.top,
-            "bottom": parentTop.bottom,
-            "right": parentTop.right,
-            "left": parentTop.left,
-            "width": $(id).width(),
-            "height": $(id).height()
+            "top": imgPos.top,
+            "bottom": imgPos.bottom,
+            "right": imgPos.right,
+            "left": imgPos.left+imgBorderOffset,
+            "width": $(childImg[0]).width(),
+            "height": $(childImg[0]).height()+imgBorderOffset
         });
 
-        console.log(parentTop);
-        console.log(parentTop.top);
-        console.log(child[0]);
+        console.log(childImg[0]);
+        console.log("Border-Width: " + imgBorderOffset);
         console.log("Test Worked");
 };
 
