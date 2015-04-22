@@ -117,17 +117,21 @@ body {
     display: inline-block;
     visibility: visible;
     position: absolute;
-    background-color:rgba(20,20,20,.0);
+    background-color:rgba(20,20,20,0);
+    color:rgba(255,255,255,0);
+
+    font-family: "open sans";
+    font-size: 1vw;
 
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -moz-transition-duration: .5s;
     -o-transition-duration: .5s;
 
-    transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    -o-transform: scale(1.25);
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
 
 }
 
@@ -136,6 +140,8 @@ body {
 .panels .panel_container:hover .short_des{
     display: inline-block;
     visibility: visible;
+    color:rgba(255,255,255,1);
+    background-color:rgba(20,20,20,.5);
 
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
@@ -152,12 +158,6 @@ body {
 .panels .panel_container{
     margin: 0;
     padding: 0;
-}
-
-.panels .panel_container:hover .short_des{
-    display: inline-block;
-    visibility: visible;
-    background-color:rgba(20,20,20,.5);
 }
 
 
