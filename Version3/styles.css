@@ -92,16 +92,16 @@ body {
     border: 2px solid #3D4047;
     vertical-align: bottom;
 
-/*
+
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -moz-transition-duration: .5s;
     -o-transition-duration: .5s;
-*/
+
 }
 
-.panels img:hover{
-/*
+.panels .panel_container:hover img{
+
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -moz-transition-duration: .5s;
@@ -111,15 +111,42 @@ body {
     -moz-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     -o-transform: scale(1.25);
-    */
+}
+
+.panels .panel_container .short_des{
+    display: inline-block;
+    visibility: visible;
+    position: absolute;
+    background-color:rgba(20,20,20,.0);
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+
 }
 
 
-.panels .short_des{
-    display: none;
-    visibility: hidden;
-    position: absolute;
-    background-color:rgba(20,20,20,.5);
+
+.panels .panel_container:hover .short_des{
+    display: inline-block;
+    visibility: visible;
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+
 }
 
 .panels .panel_container{
@@ -130,6 +157,7 @@ body {
 .panels .panel_container:hover .short_des{
     display: inline-block;
     visibility: visible;
+    background-color:rgba(20,20,20,.5);
 }
 
 

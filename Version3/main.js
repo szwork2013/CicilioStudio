@@ -79,14 +79,16 @@ displaySD = function(id){
 Sets the .short_des overlay properties correctly
  */
 overlaySD = function(){
-    $(".short_des").one("click",function(){
+    $(".panel_container").each(function(){
         var child = $(this).children("div");
         var childImg = $(this).children("img");
         var imgPos = $(childImg[0]).position();
         var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
-        console.log($(this));
-        console.log(child);
-        console.log(childImg);
+        //console.log($(this));
+        //console.log(child[0]);
+        console.log(childImg[0]);
+        console.log(imgPos);
+        console.log($(childImg[0]).width());
         $(child[0]).css({
             "top": imgPos.top,
             "bottom": imgPos.bottom,
