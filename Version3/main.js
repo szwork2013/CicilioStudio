@@ -79,23 +79,26 @@ displaySD = function(id){
 Sets the .short_des overlay properties correctly
  */
 overlaySD = function(){
-
-    var child = $(".panel_container").children("div");
-    var childImg = $(".panel_container").children("img");
-    var imgPos = $(childImg[0]).position();
-    var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
-    console.log($(".panel_container"));
-    console.log(child);
-    console.log(childImg);
-    $(child[0]).css({
-        "top": imgPos.top,
-        "bottom": imgPos.bottom,
-        "right": imgPos.right,
-        "left": imgPos.left+imgBorderOffset,
-        "width": ($(childImg[0]).width())*1.25,
-        "height": ($(childImg[0]).height()+imgBorderOffset)*1.25
+    $(".short_des").one("click",function(){
+        var child = $(this).children("div");
+        var childImg = $(this).children("img");
+        var imgPos = $(childImg[0]).position();
+        var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
+        console.log($(this));
+        console.log(child);
+        console.log(childImg);
+        $(child[0]).css({
+            "top": imgPos.top,
+            "bottom": imgPos.bottom,
+            "right": imgPos.right,
+            "left": imgPos.left+imgBorderOffset,
+            "width": ($(childImg[0]).width()),
+            "height": ($(childImg[0]).height()+imgBorderOffset)
+        });
     });
 };
+
+overlaySD();
 /**
  * Displays short description on
  * to of the image with a semi
