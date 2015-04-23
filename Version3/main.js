@@ -14,6 +14,12 @@ floatNav = function() {
     });
 };
 
+imageLoad = function(){
+    $('img').load(function(){
+        $(this).fadeIn(500);
+    });
+    console.log("worked");
+};
 
 goToTag = function(scrollToID){
   var spacing = $("#content").css("margin-top");

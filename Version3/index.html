@@ -12,6 +12,8 @@
 </head>
 
 <body>
+<script>imageLoad();</script>
+
     <div id="nav-holder" class="container">
         <div id="navBar" class="navBar">
             <ul class="main-menu">
@@ -41,7 +43,7 @@
 
         <div id="home" class="main_section">
 
-            <div id="banner"><h1 onclick="goToStart('#classes')">Banner Here</h1></div>
+            <div id="banner"><h1 onclick="goToStart('#classes')" onload="$(this).fadeIn(300);">Cicilio Studio</h1></div>
             <img src="Projects/Images/trebuchet/trebuchet22.jpg">
         </div>
 
@@ -63,20 +65,22 @@
                             </div>
                         </td>
                         <td><div class="panel_container">
-                                <img src="Projects/Images/trebuchet/trebuchet23.jpg">
+                                <img src="Projects/Images/space_fighter/space_fighter1.png">
                                 <div class="short_des">Star Fighter Project Short Description</div>
                             </div>
                         </td>
                         <td><div class="panel_container">
-                                <img src="Projects/Images/trebuchet/trebuchet24.jpg">
+                                <img src="Projects/Images/led_hat/led_hat02.png">
                                 <div class="short_des">LED App Project Short Description</div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><div class="panel_container">
-                                <img src="Projects/Images/trebuchet/trebuchet25.jpg">
-                                <div class="short_des">Capture Project Short Description</div>
+                        <td><div class="panel_container" onclick="goToTag('#capture_starlight')">
+                                <img src="Projects/Images/capture_starlight/capture_starlight01.png"
+                                     onclick="goToTag('#capture_starlight')">
+                                <div class="short_des" onclick="goToTag('#capture_starlight')">
+                                    Capture Project Short Description</div>
                             </div>
                         </td>
                         <td><div class="panel_container">
@@ -97,46 +101,56 @@
             <div id="trebuchet" class="project">
 
                 <h2>Trebuchet</h2>
-                <img src="Projects/Images/trebuchet/trebuchet13.jpg">
+                <img src="Projects/Images/trebuchet/trebuchet28.jpg">
             </div>
 
             <div id="space_fighter" class="project">
-
                 <h2>Space Fighter Game</h2>
                 <img src="Projects/Images/space_fighter/space_fighter1.png">
+                <div class="description">2012-2013 First Game Almost Completed</div>
+                <img src="Projects/Images/space_fighter/space_fighter1.png">
             </div>
-q
+
+            <div id="capture_starlight" class="project">
+                <h2>Capture Starlight Android Game</h2>
+                <div class="description">January-May 2013 Senior Independent Study</div>
+                <table>
+                    <tr>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight01.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight02.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight03.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight04.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight05.png"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight06.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight07.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight08.png"></td>
+                        <td><img src="Projects/Images/capture_starlight/capture_starlight09.png"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="main_section">
-            <br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-        test
+
         </div>
 
         <div class="main_section">
-            test2
-        </div>
 
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
+        </div>
     </section>
 
     <section id="end">
+        <hr style="color:gray">
         <div id="special_thanks">
             <h1>Special Thanks</h1>
             <h2>Color Designer: Shakeem Brown</h2>
         </div>
     </section>
 </body>
-
+<script>imageLoad();</script>
 <script>overlaySD();</script>
 </html>
