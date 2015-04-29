@@ -106,7 +106,27 @@ overlaySD = function(){
     });
 };
 
-overlaySD();
+overlaySDShort = function(){
+    $(".short_des").each(function(){
+        var childImg = $(this).children("img");
+        var imgPos = $(childImg[0]).position();
+        var imgBorderOffset = parseInt($(childImg[0]).css("border-width"),10);
+        //console.log($(this));
+        //console.log(child[0]);
+        console.log(childImg[0]);
+        console.log(imgPos);
+        console.log($(childImg[0]).width());
+        $(childImg[0]).css({
+            "top": imgPos.top,
+            "bottom": imgPos.bottom,
+            "right": imgPos.right,
+            "left": imgPos.left+imgBorderOffset,
+            "width": ($(childImg[0]).width()),
+            "height": ($(childImg[0]).height()+imgBorderOffset)
+        });
+    });
+};
+
 /**
  * Displays short description on
  * to of the image with a semi
