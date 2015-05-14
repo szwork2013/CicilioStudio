@@ -52,10 +52,8 @@ body {
 #content img{
     padding: 0;
     margin: 0;
-    align: middle;
     max-height: 100%;
     max-width: 100%;
-
     -webkit-box-shadow: 0px 0px 0px 0px black;
     -moz-box-shadow: 0px 0px 0px 0px black;
     box-shadow: 0px 0px 0px 0px black;
@@ -71,6 +69,14 @@ body {
 
 #content h2{
     text-shadow: 2px 2px black;
+    font-family: LibreBaskerville;
+    font-size: 40px;
+}
+
+#content h3{
+    text-shadow: 2px 2px black;
+    font-family: LibreBaskerville;
+    font-size: 30px;
 }
 
 .panels{
@@ -80,20 +86,84 @@ body {
     margin-left: auto;
 }
 
-.panels td{
-    padding-left: auto;
-    padding-right: auto;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    margin: 20px;
+.panels table{
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.panels td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panels .panel_container{
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 160px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:rgba(255,255,255,.9);
+
+    -webkit-box-shadow: 2px 2px 10px 2px gray;
+    -moz-box-shadow: 2px 2px 10px 2px gray;
+    box-shadow: 2px 2px 10px 2px gray;
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+
+.panels .panel_container .panel_des{
+    display: inline-block;
+    visibility: visible;
+    padding-top: 5px;
+    color:rgba(255,255,255,.9);
+    width: 100%;
+    height: 100%;
+    font-family: "open sans";
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+
+.panels .panel_container:hover{
+    color:rgba(255,255,255,1);
+
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+
 
 .panels img{
     padding: 0;
     margin: 0;
     border: 2px solid #3D4047;
-    vertical-align: bottom;
-
+    height: auto;
 
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
@@ -102,19 +172,6 @@ body {
 
 }
 
-.panels .panel_container:hover img{
-    /*
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -o-transition-duration: .5s;
-
-    transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    */
-}
 
 .panels .panel_container .short_des{
     display: inline-block;
@@ -122,7 +179,6 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-
     color:rgba(255,255,255,0);
 
     font-family: "open sans";
@@ -156,32 +212,7 @@ body {
 */
 }
 
-.panels .panel_container{
-    margin: 0;
-    padding: 0;
-    display: block;
-    height: 100px;
-    width: 120px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 
-    background-color:rgba(20,20,20,1);
-
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -o-transition-duration: .5s;
-}
-
-.panels .panel_container:hover{
-    background-color:rgba(20,20,20,5);
-
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -o-transition-duration: .5s;
-}
 
 
 #nav-holder {
@@ -204,7 +235,6 @@ body {
     font-size: 16px;
     font-family: 'open sans';
     text-transform: uppercase;
-
     cursor: default;
 }
 
@@ -304,6 +334,24 @@ body {
 #special_thanks h2{
     color: white;
     text-shadow: 1px 1px 5px black;
+}
+
+#version {
+    color:white;
+    font-size: 12px;
+    padding-right: 5px;
+    float: right;
+    text-shadow: 1px 1px black;
+}
+
+#content .blurb {
+    background-color: rgba(80,80,80,.5);
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: left;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 

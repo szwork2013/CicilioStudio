@@ -34,7 +34,7 @@
                         </div>
                     </ul>
                 </li>
-                <li>Courses</li>
+                <li class="menu-item" onclick="goToTag('#summer_programming_course')" href="#" >Summer Programming Course</li>
             </ul>
         </div>
     </div>
@@ -43,15 +43,11 @@
 
         <div id="home" class="main_section">
 
-            <div id="banner"><h1 onclick="goToStart('#classes')" onload="$(this).fadeIn(300);">Cicilio Studio</h1></div>
+            <div id="banner"><h1 onload="$(this).fadeIn(300);">Cicilio Studio</h1></div>
             <img src="Projects/Images/trebuchet/trebuchet22.jpg">
         </div>
 
-        <div id="classes" class="main_section">
-            TEST TEST
-            <br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-        </div>
+
 
         <div id="projects" class="main_section">
             <h1>Projects</h1>
@@ -59,38 +55,32 @@
             <div class="panels">
                 <table>
                     <tr>
-                        <td><div class="panel_container">
-                            <div class="short_des" onclick="goToTag('#capture_starlight')">
-                                Trebuchet Project Short Description</div>
-                                <img src="Projects/Images/trebuchet/trebuchet28.jpg">
-                            </div>
-                        </td>
-                        <td><div class="panel_container">
-                                <div class="short_des">Star Fighter Project Short Description
-                                    <img src="Projects/Images/space_fighter/space_fighter1.png">
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/trebuchet/trebuchet28.jpg')">
+                                <div class="panel_des" onclick="goToTag('#capture_starlight')">
+                                    Trebuchet
                                 </div>
                             </div>
                         </td>
-                        <td><div class="panel_container">
-                                <div class="short_des">LED App Project Short Description
-                                    <img src="Projects/Images/led_hat/led_hat02.png">
-                                </div>
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/space_fighter/space_fighter1.png')">
+                                <div class="panel_des">Star Fighter</div>
+                            </div>
+                        </td>
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/led_hat/led_hat02.png')">
+                                <div class="panel_des">LED App</div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><div class="panel_container" style="background-image:url('Projects/Images/capture_starlight/capture_starlight01.png')">
-                                <div class="short_des" onclick="goToTag('#capture_starlight')">
-                                    Capture Project Short Description
-                                </div>
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/capture_starlight/capture_starlight01.png')">
+                                <div class="panel_des" onclick="goToTag('#capture_starlight')">Capture Starlight</div>
                             </div>
                         </td>
-                        <td><div class="panel_container" style="background-image:url('Projects/Images/trebuchet/trebuchet26.jpg')">
-                                <div class="short_des">HTML Editor Trebuchet Project Short Description</div>
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/trebuchet/trebuchet26.jpg')">
+                                <div class="panel_des">HTML Editor</div>
                             </div>
                         </td>
-                        <td><div class="panel_container" style="background-image:url('Projects/Images/trebuchet/trebuchet27.jpg')">
-                                <div class="short_des">Trebuchet Project Short Description</div>
+                        <td><div class="panel_container" style="background-image: url('Projects/Images/trebuchet/trebuchet27.jpg')">
+                                <div class="panel_des">Trebuchet</div>
                             </div>
                         </td>
                     </tr>
@@ -134,8 +124,36 @@
             </div>
         </div>
 
-        <div class="main_section">
 
+        <div id="courses" class="main_section">
+            <div id="summer_programming_course">
+                <h2>Summer Programming Courses</h2>
+                <div id="course_description">
+                    <h3>Course Description</h3>
+                    <div class="blurb">
+                        This class will teach python programming form the ground up.<br>
+                        adfad<br>
+                        adfadf<br>
+                        adfadf<br>
+                        adfafd<br>
+                    </div>
+                </div>
+                <div id="setup">
+                    <h3>Preparation and Setup</h3>
+                    <div>
+                        Downloading Python
+                    </div>
+                </div>
+
+                <div id="week_1">
+                    <h3>Week 1</h3>
+
+                </div>
+                <div id="week_2">
+                    <h3>Week 2</h3>
+
+                </div>
+            </div>
         </div>
 
         <div class="main_section">
@@ -143,11 +161,18 @@
         </div>
     </section>
 
+
     <section id="end">
         <hr style="color:gray">
         <div id="special_thanks">
             <h1>Special Thanks</h1>
             <h2>Color Designer: Shakeem Brown</h2>
+        </div>
+    </section>
+
+    <section id="version">
+        <div>
+            Version 1.0.0
         </div>
     </section>
 </body>
