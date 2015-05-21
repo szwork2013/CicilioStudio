@@ -22,12 +22,12 @@ body {
 }
 #banner h1{
     color: white;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 20px 20px 10px black;
 }
 
 #content{
     /*padding-top: 100px;*/
-    margin-top: 63px;
+    margin-top: 61px;
     text-align: center;
     color: white;
 }
@@ -63,19 +63,19 @@ body {
     font-size: 50px;
     padding: 0;
     margin: 0;
-    font-family: LibreBaskerville;
+    font-family: 'open sans';
     text-shadow: 2px 2px black;
 }
 
 #content h2{
     text-shadow: 2px 2px black;
-    font-family: LibreBaskerville;
+    font-family: 'open sans';
     font-size: 40px;
 }
 
 #content h3{
     text-shadow: 2px 2px black;
-    font-family: LibreBaskerville;
+    font-family: 'open sans';
     font-size: 30px;
 }
 
@@ -130,7 +130,7 @@ body {
     width: 100%;
     height: 100%;
 
-    font-family: LibreBaskerville;
+    font-family:'Libre Baskerville', serif;
     font-size: 20px;
     text-shadow: 2px 2px black;
 
