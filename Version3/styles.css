@@ -365,5 +365,21 @@ body {
     font-size: 18px;
 }
 
+#content .reference {
+    border-radius: 2px;
+
+    background-color: inherit;
+    margin: 5px;
+    margin-top: 5px;
+    color: skyblue;
+    text-decoration: none;
+
+    text-shadow: 1px 1px black;
+}
+
+#content .reference:hover {
+    color: deepskyblue;
+    cursor: pointer;
+}
 
 
