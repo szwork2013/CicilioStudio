@@ -368,7 +368,7 @@ body {
 #content .reference {
     border-radius: 2px;
 
-    background-color: inherit;
+
     margin: 5px;
     margin-top: 5px;
     color: skyblue;
@@ -380,6 +380,12 @@ body {
 #content .reference:hover {
     color: deepskyblue;
     cursor: pointer;
+}
+
+#contact_info{
+    padding: 10px;
+    font-size: 14px;
+    color: white;
 }
 
 
