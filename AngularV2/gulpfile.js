@@ -9,11 +9,11 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 
 var paths = {
-    sass: ['./sass/*.scss'],
-    images: ['./img/**/*.*'],
-    index: ['./index.html'],
-    dep: ['./dependencies/**'],
-    angular: ['./angular/**']
+    sass: ['./webapp/sass/*.scss'],
+    images: ['./webapp/img/**/*.*'],
+    index: ['./webapp/index.html'],
+    dep: ['./webapp/dependencies/**'],
+    angular: ['./webapp/angular/*.*']
 };
 
 gulp.task('clean', function(cb) {
@@ -56,8 +56,8 @@ gulp.task('watch', function () {
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.images, ['images']);
     gulp.watch(paths.index, ['index']);
-    gulp.watch((paths.dep, ['dep']));
-    gulp.watch((paths.angular, ['angular']));
+    gulp.watch(paths.dep, ['dep']);
+    gulp.watch(paths.angular, ['angular']);
 });
 
 gulp.task('default', ['watch', 'sass', 'images', 'index', 'dep', 'angular']);
