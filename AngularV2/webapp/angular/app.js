@@ -7,6 +7,7 @@ mod.directive('csApp', function(){
     };
 });
 
+//cs: cicilio studio
 var el = document.createElement('cs-app');
 angular.bootstrap(el, [mod.name]);
 $('.cs-app-class').append(el);
