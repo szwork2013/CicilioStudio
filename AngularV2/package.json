@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lance13c/CicilioStudio/issues"
   },
-  "homepage": "https://github.com/lance13c/CicilioStudio#readme"
+  "homepage": "https://github.com/lance13c/CicilioStudio#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
