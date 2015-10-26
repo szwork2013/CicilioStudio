@@ -2,4 +2,4 @@
 
 
 ###Current Website: AngularV2
-A personal website that using JQuery, AngularJS, and UIkit.
+A personal webapp/website that using NodeJS, ES6, AngularJS, Gulp, and UIkit.
