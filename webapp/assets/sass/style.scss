@@ -4,4 +4,9 @@ $primary-color: #333;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-image: url('../../assets/img/Frozen.jpeg');
+}
+
+.cs-card-row {
+  margin-top: 10vh;
 }
