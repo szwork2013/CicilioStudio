@@ -22,12 +22,13 @@ var httpServer = http.createServer(app);
 //app.set('view engine', 'html');
 //Hosts the static files in public under /assets
 app.use(express.static(`${__dirname}/target`));
+app.use('/dependencies', express.static(`${__dirname}/node_modules`));
 
 var cs_ports = {http: 80, https: 443 };
 
-//app.get('/', function(req, res){
-//    res.send('yo');
-//});
+app.get('/', function(req, res){
+    res.sendFile('target/index.html');
+});
 
 httpServer.listen(cs_ports.http, function () {
     //var host = server.address().address;

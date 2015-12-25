@@ -9,8 +9,8 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 
 var paths = {
-    sass: ['./webapp/sass/*.scss'],
-    images: ['./webapp/img/**/*.*'],
+    sass: ['./webapp/assets/sass/*.scss'],
+    images: ['./webapp/assets/img/**/*.*'],
     index: ['./webapp/index.html'],
     dep: ['./webapp/dependencies/**'],
     angular: ['./webapp/angular/*.*']
@@ -60,4 +60,4 @@ gulp.task('watch', function () {
     gulp.watch(paths.angular, ['angular']);
 });
 
-gulp.task('default', ['watch', 'sass', 'images', 'index', 'dep', 'angular']);
+gulp.task('default', ['watch', 'sass', 'images', 'index', 'angular']);

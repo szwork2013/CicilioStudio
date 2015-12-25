@@ -19,6 +19,13 @@
   "homepage": "https://github.com/lance13c/CicilioStudio#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "jade": "^1.11.0"
+    "materialize-css": "^0.97.5"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.1.1",
+    "node-sass": "^3.4.2"
   }
 }

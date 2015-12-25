@@ -1,4 +1,4 @@
-var mod = angular.module("mod", []);
+var mod = angular.module("mod", ['ui.router']);
 mod.directive('csApp', function(){
     return {
         scope: {},
@@ -6,7 +6,6 @@ mod.directive('csApp', function(){
         templateUrl: './angular/cs-app.html'
     };
 });
-
 //cs: cicilio studio
 var el = document.createElement('cs-app');
 angular.bootstrap(el, [mod.name]);
