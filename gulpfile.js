@@ -12,6 +12,7 @@ var paths = {
     sass: ['./webapp/assets/sass/*.scss'],
     images: ['./webapp/assets/img/**'],
     views: ['./webapp/views/*.html'],
+    js: ['./webapp/assets/js/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
     angular: ['./webapp/angular/*.*']
@@ -29,6 +30,11 @@ gulp.task('angular', function() {
 gulp.task('views', function() {
     gulp.src(paths.views)
         .pipe(gulp.dest('./target/views'));
+});
+
+gulp.task('js', function() {
+    gulp.src(paths.js)
+        .pipe(gulp.dest('./target/assets/js'));
 });
 
 gulp.task('dep', function() {
@@ -65,6 +71,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.dep, ['dep']);
     gulp.watch(paths.angular, ['angular']);
     gulp.watch(paths.views, ['views']);
+    gulp.watch(paths.js, ['js']);
 });
 
-gulp.task('default', ['watch', 'views', 'sass', 'images', 'main', 'angular']);
+gulp.task('default', ['watch', 'views', 'sass', 'images', 'main', 'angular', 'js']);
