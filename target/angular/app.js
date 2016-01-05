@@ -22,7 +22,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
            templateUrl: "../views/home.html"
         })
         .state('main', {
-            templateUrl : "../views/main.html"
+            template : "<cs-main></cs-main>"
         })
         .state('main.projects', {
             url: "^/projects",
@@ -30,3 +30,13 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         });
     $urlRouterProvider.otherwise("/");
 }]);
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csMain", function(){
+    return {
+        scope: {},
+        restrict: 'E',
+        templateUrl: './views/main.html'
+    };
+});

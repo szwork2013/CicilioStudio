@@ -7,15 +7,17 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
+var concat = require('gulp-concat');
 
 var paths = {
     sass: ['./webapp/assets/sass/*.scss'],
+    sass_partials: ['./webapp/assets/sass/partials/*.scss'],
     images: ['./webapp/assets/img/**'],
     views: ['./webapp/views/*.html'],
     js: ['./webapp/assets/js/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
-    angular: ['./webapp/angular/*.*']
+    angular: ['./webapp/angular']
 };
 
 gulp.task('clean', function(cb) {
@@ -23,8 +25,17 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('angular', function() {
-    gulp.src(paths.angular)
+    gulp.src([paths.angular + "/app.js",paths.angular + "/controller/*.js",
+        paths.angular + "/directives/*.js"])
+        .pipe(concat('app.js'))
         .pipe(gulp.dest('./target/angular'));
+
+    gulp.src([paths.angular + "/cs-app.html"])
+        .pipe(gulp.dest('./target/angular'));
+    //
+    //
+    //gulp.src(paths.angular)
+    //    .pipe(gulp.dest('./target/angular'));
 });
 
 gulp.task('views', function() {
@@ -50,6 +61,14 @@ gulp.task('sass', function() {
             includePaths : [paths.sass]
         }))
         .pipe(gulp.dest('./target/assets/css'));
+
+    //Not working
+    gulp.src(paths.sass_partials)
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths : [paths.sass_partials]
+        }))
+        .pipe(gulp.dest('./target/assets/css/partials'));
 });
 
 gulp.task('main', function() {
