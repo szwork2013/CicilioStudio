@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "trebuchet",
+      "short_des": "This is my trebuchet short description",
+      "description": "This is my trebuchet long description, This is my trebuchet long description, This is my trebuchet long description",
+      "github_url": "",
+      "cs_url": "",
+      "blog": "",
+      "images": "/assets/images/projects/trebuchet",
+      "videos": ""
+    }
+  ]
+}

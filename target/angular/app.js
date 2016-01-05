@@ -40,3 +40,16 @@ mod.directive("csMain", function(){
         templateUrl: './views/main.html'
     };
 });
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csProjectsCards", function(){
+    return {
+        scope: {},
+        restrict: 'A',
+        link: function(){
+
+        },
+        templateUrl: './views/projects_cards.html'
+    };
+});

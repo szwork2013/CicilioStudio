@@ -1,7 +1,21 @@
 $font-stack:    Roboto;
 $primary-color: #333;
 
+$theme-1: #212A3F;
+$theme-2: #434F5B;
+$theme-3: #F2F2F2;
+$theme-4: #8AB839;
+$theme-5: #2E2E2E;
+
+$buffer: 10px;
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+.cs-nav {
+  .cs-siteicon {
+    margin-left: $buffer;
+  }
 }
