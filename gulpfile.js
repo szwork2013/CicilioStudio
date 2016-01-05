@@ -17,7 +17,8 @@ var paths = {
     js: ['./webapp/assets/js/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
-    angular: ['./webapp/angular']
+    angular: ['./webapp/angular'],
+    angularDir: ['./webapp/angular/**/*.*']
 };
 
 gulp.task('clean', function(cb) {
@@ -89,6 +90,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.main, ['main']);
     gulp.watch(paths.dep, ['dep']);
     gulp.watch(paths.angular, ['angular']);
+    gulp.watch(paths.angularDir, ['angular']);
     gulp.watch(paths.views, ['views']);
     gulp.watch(paths.js, ['js']);
 });
