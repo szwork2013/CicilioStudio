@@ -20,8 +20,14 @@ body {
   }
   .cs-mobile-menu {
     margin-right: $buffer;
+    cursor: pointer;
   }
   .cs-mobile-back {
     margin-left: $buffer;
+    cursor: pointer;
   }
+}
+
+.cs-main-header {
+
 }
