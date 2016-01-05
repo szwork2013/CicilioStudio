@@ -1,32 +1,43 @@
-<div class="navbar-fixed">
-    <nav class="cs-nav">
-        <div class="nav-wrapper">
-            <a ui-sref="home" class="brand-logo cs-siteicon">CicilioStudio</a>
-            <a href="#" data-activates="mobile-nav" class="right button-collapse cs-mobile-menu"><i class="material-icons">menu</i></a>
-            <a class="left button-collapse"><i class="material-icons cs-mobile-back">arrow_backwords</i></a>
+<div class="cs-nav">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a ui-sref="home" class="brand-logo cs-siteicon">CicilioStudio</a>
+                <a href="#" data-activates="mobile-nav" class="right button-collapse cs-mobile-menu"><i class="material-icons">menu</i></a>
+                <a class="left button-collapse cs-mobile-back"><i class="material-icons">arrow_backwords</i></a>
 
 
-            <ul class="right hide-on-med-and-down">
-                <li><a ui-sref="home">Home</a></li>
-                <li><a ui-sref="main.projects">Projects</a></li>
-                <li><a ui-sref="main.skills">Skills</a></li>
-                <li><a ui-sref="main.experience">Experience</a></li>
-                <li><a ui-sref="main.life">Life</a></li>
-                <li><a ui-sref="main.contact">Contact</a></li>
-            </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="main.projects">Projects</a></li>
+                    <li><a ui-sref="main.skills">Skills</a></li>
+                    <li><a ui-sref="main.experience">Experience</a></li>
+                    <li><a ui-sref="main.life">Life</a></li>
+                    <li><a ui-sref="main.contact">Contact</a></li>
+                </ul>
 
 
-            <ul class="side-nav" id="mobile-nav">
-                <li><a ui-sref="home">Home</a></li>
-                <li><a ui-sref="main.projects">Projects</a></li>
-                <li><a ui-sref="main.skills">Skills</a></li>
-                <li><a ui-sref="main.experience">Experience</a></li>
-                <li><a ui-sref="main.life">Life</a></li>
-                <li><a ui-sref="main.contact">Contact</a></li>
-            </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="main.projects">Projects</a></li>
+                    <li><a ui-sref="main.skills">Skills</a></li>
+                    <li><a ui-sref="main.experience">Experience</a></li>
+                    <li><a ui-sref="main.life">Life</a></li>
+                    <li><a ui-sref="main.contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="cs-breadcrumb hide-on-med-and-down">
+    <div class="navbar-fixed">
+        <div class="cs-breadcrumb-wrapper">
 
         </div>
-    </nav>
+    </div>
 </div>
+
 
 <div ui-view></div>

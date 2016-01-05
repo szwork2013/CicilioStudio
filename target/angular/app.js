@@ -35,10 +35,16 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
  */
 mod.directive("csMain", function(){
     return {
-        scope: {},
+        scope: {
+        },
         restrict: 'E',
-        link: function(){
-            var menu = $('.button-collapse');
+        link: function(scope){
+            scope.breadcrumbs = [
+                '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
+                '<a href="#!" class="cs-breadcrumb valign">Second</a>',
+                '<a href="#!" class="cs-breadcrumb valign">Third</a>'
+            ];
+            var menu = $('.cs-mobile-menu');
             menu.sideNav({
                 menuWidth: 200,
                 edge: 'right',
@@ -68,3 +74,6 @@ mod.directive("csProjectsCards", function(){
         templateUrl: './views/projects_cards.html'
     };
 });
+/**
+ * Created by Lance on 1/5/2016.
+ */

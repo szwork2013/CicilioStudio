@@ -27,7 +27,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('angular', function() {
     gulp.src([paths.angular + "/app.js",paths.angular + "/controller/*.js",
-        paths.angular + "/directives/*.js"])
+        paths.angular + "/directives/*.js", paths.angular + "/services/*.js"])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./target/angular'));
 
