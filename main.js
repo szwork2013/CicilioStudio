@@ -26,7 +26,7 @@ app.use('/dependencies', express.static(`${__dirname}/node_modules`));
 
 var cs_ports = {http: 80, https: 443 };
 
-app.get('/', function(req, res){
+app.get('/*', function(req, res){
     res.sendFile('target/index.html');
 });
 

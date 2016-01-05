@@ -12,13 +12,21 @@ var el = document.createElement('cs-app');
 angular.bootstrap(el, [mod.name]);
 $('.cs-app-class').append(el);
 
-mod.config(function($stateProvider, $urlRouterProvider){
+//Routing
 
-    $urlRouterProvider.otherwise("/");
+mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $stateProvider
         .state('home', {
            url: "/",
-           templateUrl: "views/home.html"
+           templateUrl: "../views/home.html"
+        })
+        .state('main', {
+            templateUrl : "../views/main.html"
+        })
+        .state('main.projects', {
+            url: "^/projects",
+            templateUrl: "../views/projects.html"
         });
-});
+    $urlRouterProvider.otherwise("/");
+}]);
