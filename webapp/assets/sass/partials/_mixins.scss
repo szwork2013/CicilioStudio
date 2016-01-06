@@ -1,8 +1,17 @@
 
 @import "colors";
+@import "animations";
 
 @mixin cs-box-shadow($x, $y, $blur, $spread, $color) {
   box-shadow: $x $y $blur $spread $color;
   -webkit-box-shadow: $x $y $blur $spread $color;
   -moz-box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin cs-fade-in-background($timeIn) {
+  -webkit-transition: background $timeIn linear;
+  -moz-transition: background $timeIn linear;
+  -ms-transition: background $timeIn linear;
+  -o-transition: background $timeIn linear;
+  transition: background $timeIn linear;
 }
