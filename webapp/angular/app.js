@@ -19,7 +19,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     $stateProvider
         .state('main.home', {
            url: "/",
-           templateUrl: "../views/home.html"
+           template: "<cs-home></cs-home>"
         })
         .state('main', {
             template : "<cs-main></cs-main>"

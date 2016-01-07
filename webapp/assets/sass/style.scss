@@ -126,6 +126,25 @@ body {
   margin-right: 10px;
 }
 
+//Home
+
+.cs-home {
+  padding-top: 10%;
+
+  .cs-home-btn-wrapper {
+
+    .cs-home-btn {
+      font-size: 60px;
+      font-weight: 200;
+      color: $theme-3;
+    }
+
+    .cs-home-btn:hover {
+      color: $theme-4;
+      cursor: pointer;
+    }
+  }
+}
 
 
 //Font Awesome Color Additions

@@ -19,7 +19,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     $stateProvider
         .state('main.home', {
            url: "/",
-           templateUrl: "../views/home.html"
+           template: "<cs-home></cs-home>"
         })
         .state('main', {
             template : "<cs-main></cs-main>"
@@ -30,6 +30,26 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         });
     $urlRouterProvider.otherwise("/");
 }]);
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csHome", function(){
+    return {
+        scope: {
+        },
+        restrict: 'E',
+        link: function(scope){
+
+            //Sets up mobile side nav
+            var home = $('.cs-home');
+            var screenHeight = document.body.scrollHeight;
+            var navHeight = document.getElementsByClassName('cs-nav')[0].scrollHeight;
+            home.css("height", screenHeight-navHeight);
+
+        },
+        templateUrl: './views/home.html'
+    };
+});
 /**
  * Created by Lance on 1/4/2016.
  */
