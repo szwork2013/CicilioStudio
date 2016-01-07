@@ -1,4 +1,4 @@
-var mod = angular.module("mod", ['ui.router']);
+var mod = angular.module("mod", ['ui.router', 'ui.materialize']);
 mod.directive('csApp', function(){
     return {
         scope: {},
