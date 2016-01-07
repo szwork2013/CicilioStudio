@@ -8,7 +8,9 @@
 
                 <!--Main Nav-->
                 <ul class="hide-on-med-and-down cs-main-nav">
-                    <li><a ui-sref="main.home">Home<i class="material-icons">home</i></a></li>
+                    <li ui-sref="main.home" class="tooltipped"
+                        data-position="bottom" data-delay="10" data-tooltip="Home">
+                        <a><i class="material-icons left">home</i></a></li>
                     <li>
                         <a ui-sref="main.projects" class='dropdown-button cs-dropdown-projects-btn' data-beloworigin="true" data-activates='dropdown-projects'>
                             Projects<i class="material-icons right">arrow_drop_down</i>
@@ -33,7 +35,7 @@
 
                 <!--Mobile Side Navigation-->
                 <ul class="side-nav cs-side-nav" id="mobile-nav">
-                    <li><a ui-sref="main.home"><i class="material-icons">home</i> Home</a></li>
+                    <li ui-sref="main.home"><a>Home</a></li>
                         <li class="divider"></li>
                     <li><a ui-sref="main.projects">Projects</a></li>
                         <li class="divider"></li>

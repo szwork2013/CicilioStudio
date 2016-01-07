@@ -33,7 +33,14 @@ body {
         font-size: 18px;
         font-weight: 400;
         background: $theme-1;
+        cursor: pointer;
         @include cs-fade-in-background($fade-color-time);
+
+        i {
+          font-size: 2rem;
+          margin-left: 8px;
+          margin-right: 8px;
+        }
       }
 
       li:hover {
@@ -43,6 +50,7 @@ body {
 
       .cs-main-nav {
         margin-left: $logo-offset;
+
       }
 
       .cs-side-nav {
