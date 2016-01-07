@@ -40,11 +40,7 @@ mod.directive("csHome", function(){
         restrict: 'E',
         link: function(scope){
 
-            //Sets up mobile side nav
-            var home = $('.cs-home');
-            var screenHeight = document.body.scrollHeight;
-            var navHeight = document.getElementsByClassName('cs-nav')[0].scrollHeight;
-            home.css("height", screenHeight-navHeight);
+            //On hover change cs-home background image
 
         },
         templateUrl: './views/home.html'

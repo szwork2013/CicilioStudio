@@ -12,7 +12,7 @@ var concat = require('gulp-concat');
 var paths = {
     sass: ['./webapp/assets/sass/*.scss'],
     sass_partials: ['./webapp/assets/sass/partials/*.scss'],
-    images: ['./webapp/assets/img/**'],
+    images: ['./webapp/assets/images/**'],
     views: ['./webapp/views/*.html'],
     js: ['./webapp/assets/js/**'],
     main: ['./webapp/*.*'],
@@ -81,11 +81,12 @@ gulp.task('main', function() {
 gulp.task('images', function() {
     return gulp.src(paths.images)
         .pipe(imagemin({optimizationLevel: 2}))
-        .pipe(gulp.dest('target/assets/img'));
+        .pipe(gulp.dest('target/assets/images'));
 });
 
 gulp.task('watch', function () {
     gulp.watch(paths.sass, ['sass']);
+    gulp.watch(paths.sass_partials, ['sass']);
     gulp.watch(paths.images, ['images']);
     gulp.watch(paths.main, ['main']);
     gulp.watch(paths.dep, ['dep']);

@@ -1,5 +1,6 @@
 @import "partials/colors";
 @import "partials/mixins";
+@import "partials/images";
 
 $font-stack: Roboto;
 $nav-height: 63px;
@@ -126,12 +127,17 @@ body {
   margin-right: 10px;
 }
 
-//Home
 
+//Home
 .cs-home {
   padding-top: 10%;
 
   .cs-home-btn-wrapper {
+    @include cs-fade-in-background(200ms);
+
+    .cs-home-projects:hover{
+      @include cs-fade-in-background(200ms);
+    }
 
     .cs-home-btn {
       font-size: 60px;
