@@ -33,6 +33,9 @@ mod.directive("csMain", function(){
                     alignment: 'left' // Displays dropdown with edge aligned to the left of button
                 }
             );
+
+            //Icon Tooltips
+            $('.tooltipped').tooltip();
         },
         templateUrl: './views/main.html'
     };

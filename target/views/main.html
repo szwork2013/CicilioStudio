@@ -8,7 +8,7 @@
 
                 <!--Main Nav-->
                 <ul class="hide-on-med-and-down cs-main-nav">
-                    <li><a ui-sref="main.home">Home</a></li>
+                    <li><a ui-sref="main.home">Home<i class="material-icons">home</i></a></li>
                     <li>
                         <a ui-sref="main.projects" class='dropdown-button cs-dropdown-projects-btn' data-beloworigin="true" data-activates='dropdown-projects'>
                             Projects<i class="material-icons right">arrow_drop_down</i>
@@ -18,11 +18,22 @@
                     <li><a ui-sref="main.experience">Experience</a></li>
                     <li><a ui-sref="main.life">Life</a></li>
                     <li><a ui-sref="main.contact">Contact</a></li>
+
+                    <a class="right cs-fa-linkedin-square tooltipped" href="https://www.linkedin.com/in/dominic-cicilio-96461786"
+                       data-position="bottom" data-delay="10" data-tooltip="Linkedin">
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
+                    <a class="right cs-fa-github-square tooltipped" href="https://github.com/lance13c"
+                       data-position="bottom" data-delay="10" data-tooltip="Github">
+                            <i class="fa fa-github-square fa-2x"></i>
+                    </a>
+
                 </ul>
+
 
                 <!--Mobile Side Navigation-->
                 <ul class="side-nav cs-side-nav" id="mobile-nav">
-                    <li><a ui-sref="main.home">Home</a></li>
+                    <li><a ui-sref="main.home"><i class="material-icons">home</i> Home</a></li>
                         <li class="divider"></li>
                     <li><a ui-sref="main.projects">Projects</a></li>
                         <li class="divider"></li>

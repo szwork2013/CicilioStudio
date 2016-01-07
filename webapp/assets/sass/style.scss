@@ -2,7 +2,7 @@
 @import "partials/mixins";
 
 $font-stack: Roboto;
-
+$nav-height: 63px;
 $buffer: 10px;
 
 body {
@@ -116,4 +116,27 @@ body {
 
 .cs-right-margin {
   margin-right: 10px;
+}
+
+
+
+//Font Awesome Color Additions
+.cs-fa-linkedin-square {
+  color: #007BB6;
+  background: $theme-1;
+  height: $nav-height;
+}
+
+.cs-fa-linkedin-square:hover {
+  background: $theme-4;
+}
+
+.cs-fa-github-square {
+  color: #007BB6;
+  background: $theme-1;
+  height: $nav-height;
+}
+
+.cs-fa-github-square:hover {
+  background: $theme-4;
 }
