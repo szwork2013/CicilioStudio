@@ -17,7 +17,7 @@ $('.cs-app-class').append(el);
 mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $stateProvider
-        .state('home', {
+        .state('main.home', {
            url: "/",
            templateUrl: "../views/home.html"
         })

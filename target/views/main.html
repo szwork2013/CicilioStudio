@@ -2,13 +2,13 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a ui-sref="home" class="brand-logo cs-siteicon">CicilioStudio</a>
+                <a ui-sref="main.home" class="brand-logo cs-siteicon">CicilioStudio</a>
                 <a href="#" data-activates="mobile-nav" class="right button-collapse cs-mobile-menu"><i class="material-icons">menu</i></a>
                 <a class="left button-collapse cs-mobile-back"><i class="material-icons">arrow_backwords</i></a>
 
-
-                <ul class="right hide-on-med-and-down">
-                    <li><a ui-sref="home">Home</a></li>
+                <!--Main Nav-->
+                <ul class="hide-on-med-and-down cs-main-nav">
+                    <li><a ui-sref="main.home">Home</a></li>
                     <li>
                         <a ui-sref="main.projects" class='dropdown-button cs-dropdown-projects-btn' data-beloworigin="true" data-activates='dropdown-projects'>
                             Projects<i class="material-icons right">arrow_drop_down</i>
@@ -22,7 +22,7 @@
 
                 <!--Mobile Side Navigation-->
                 <ul class="side-nav cs-side-nav" id="mobile-nav">
-                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="main.home">Home</a></li>
                         <li class="divider"></li>
                     <li><a ui-sref="main.projects">Projects</a></li>
                         <li class="divider"></li>

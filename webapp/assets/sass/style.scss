@@ -8,27 +8,41 @@ $buffer: 10px;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background: $theme-5;
 }
 
 
 
 .cs-nav {
 
+  $fade-color-time : 100ms;
+  $logo-offset: 200px;
+
   nav {
     border-bottom: solid 1px $theme-1;
     box-shadow: none;
 
+    .cs-nav-btn-active{
+      background: $theme-4;
+    }
+
     .nav-wrapper {
       background: $theme-1;
 
-      li:hover {
-        background: $theme-2;
-        @include cs-fade-in-background(100ms);
+      li{
+        font-size: 18px;
+        font-weight: 400;
+        background: $theme-1;
+        @include cs-fade-in-background($fade-color-time);
       }
 
-      li{
-        background: $theme-1;
-        @include cs-fade-in-background(100ms);
+      li:hover {
+        background: $theme-4;
+        @include cs-fade-in-background($fade-color-time);
+      }
+
+      .cs-main-nav {
+        margin-left: $logo-offset;
       }
 
       .cs-side-nav {
