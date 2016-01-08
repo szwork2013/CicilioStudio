@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="283c6ab8-e37e-499a-b314-09c0d775d730" name="Default" comment="Static Files Now Serving Properly">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/assets/images/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/views/skills.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsDir.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/angular/directives/ProjectsCardsDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsCardsDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/icons/cs_icon.xcf" afterPath="$PROJECT_DIR$/design/icons/cs_icon.xcf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/angular/app.js" afterPath="$PROJECT_DIR$/target/angular/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/assets/css/style.css" afterPath="$PROJECT_DIR$/target/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/views/skills.html" afterPath="$PROJECT_DIR$/target/views/skills.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/app.js" afterPath="$PROJECT_DIR$/webapp/angular/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/assets/sass/style.scss" afterPath="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/views/skills.html" afterPath="$PROJECT_DIR$/webapp/views/skills.html" />
     </list>
     <list id="9c5caf0c-3ebf-45df-839e-e815dc5e73a9" name="Failed commit: Default" comment="New Version of CicilioStudio using jquery and css" />
     <ignored path="CicilioStudio.iws" />
@@ -39,17 +41,17 @@
             <entry file="file://$PROJECT_DIR$/webapp/angular/app.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+                  <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomeDir.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/HomeDir.js">
+          <file leaf-file-name="ProjectsDir.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsDir.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+                  <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#40#0" expanded="false" />
                   </folding>
@@ -60,38 +62,30 @@
           <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.346153">
-                  <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+                <state vertical-scroll-proportion="-9.153846">
+                  <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="16" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/views/home.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.730769">
-                  <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.461538">
-                  <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SkillsDir.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SkillsDir.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2302483">
-                  <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainDir.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/MainDir.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#40#0" expanded="false" />
                   </folding>
@@ -102,7 +96,7 @@
           <file leaf-file-name="_images.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_images.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.30769232">
+                <state vertical-scroll-proportion="-0.65384614">
                   <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
                   <folding />
                 </state>
@@ -112,8 +106,18 @@
           <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.30769232">
+                <state vertical-scroll-proportion="-10.461538">
                   <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.3068592">
+                  <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -123,31 +127,33 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="skills.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.65384614">
-                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SkillsCardDir.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="SkillsDir.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+                  <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="skills.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.21744186">
+                  <caret line="11" column="67" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="69" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SkillsCardDir.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#40#0" expanded="false" />
                   </folding>
@@ -185,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AngularV2/gulpfile.js" />
         <option value="$PROJECT_DIR$/AngularV2/target/angular/app.js" />
         <option value="$PROJECT_DIR$/AngularV2/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/AngularV2/webapp/sass/style.scss" />
@@ -208,7 +213,6 @@
         <option value="$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js" />
         <option value="$PROJECT_DIR$/target/assets/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/data/projects.json" />
-        <option value="$PROJECT_DIR$/webapp/angular/directives/ProjectsDir.js" />
         <option value="$PROJECT_DIR$/webapp/views/projects.html" />
         <option value="$PROJECT_DIR$/webapp/views/cs-project-cards.html" />
         <option value="$PROJECT_DIR$/webapp/views/cs_project_cards.html" />
@@ -227,15 +231,17 @@
         <option value="$PROJECT_DIR$/webapp/angular/directives/HomeDir.js" />
         <option value="$PROJECT_DIR$/webapp/views/home.html" />
         <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_colors.scss" />
-        <option value="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/SkillsDir.js" />
-        <option value="$PROJECT_DIR$/webapp/views/skills.html" />
-        <option value="$PROJECT_DIR$/webapp/angular/app.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/target/angular/app.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/ProjectsDir.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/app.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsDir.js" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" />
+        <option value="$PROJECT_DIR$/webapp/views/skills.html" />
+        <option value="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
       </list>
     </option>
   </component>
@@ -496,7 +502,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="skills" />
+              <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,46 +517,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -606,11 +572,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\angular\directives\projects" />
       <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\angular\directives\skills" />
       <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\assets\sass\partials" />
       <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\angular\controllers" />
       <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\angular" />
-      <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\assets\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lance\GitHubProjects\CicilioStudio\webapp\assets\images" />
@@ -1214,6 +1180,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030357143">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,17 +1212,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/ProjectsCardsDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19165727">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/materialize-css/sass/components/_global.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2142857">
           <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,20 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/MainDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019744484">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1311,68 +1258,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_images.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8419865">
           <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/HomeDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.346153">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.461538">
-          <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1395,14 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42212188">
@@ -1416,26 +1297,130 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/assets/images/favicon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js">
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2302483">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsCardsDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36455983">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/projects/ProjectsDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019767443">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41511628">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/HomeDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11512415">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/MainDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21744186">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_images.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3068592">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

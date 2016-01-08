@@ -9,8 +9,12 @@ $nav-background-color: $theme-1;
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
   background: $theme-2;
+
+  .cs-main-header {
+    font-weight: 700;
+    color: $theme-3;
+  }
 }
 
 
@@ -115,10 +119,6 @@ body {
   }
 }
 
-.cs-main-header {
-
-}
-
 .cs-left-margin {
   margin-left: 10px;
 }
@@ -127,6 +127,20 @@ body {
   margin-right: 10px;
 }
 
+
+//Skills
+.cs-skills {
+  .cs-skills-info{
+    font-weight: 300;
+    font-size: 2rem;
+    color: $theme-3;
+  }
+
+  .cs-dropdown-skills-filter-btn {
+    background: $nav-background-color;
+    color: $theme-3;
+  }
+}
 
 //Home
 .cs-home {

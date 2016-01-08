@@ -26,7 +26,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.projects', {
             url: "^/projects",
-            templateUrl: "../views/projects.html"
+            template: "<cs-projects></cs-projects>"
         })
         .state('main.skills', {
             url: '^/skills',
@@ -36,6 +36,10 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 }]);
 /**
  * Created by Lance on 1/4/2016.
+ */
+
+/**
+ * Created by Lance on 1/5/2016.
  */
 
 /**
@@ -117,13 +121,32 @@ mod.directive("csProjectsCards", function(){
     };
 });
 /**
- * Created by Lance on 1/5/2016.
+ * Created by Lance on 1/7/2016.
  */
-
+mod.directive("csProjects", function(){
+    return {
+        scope: {
+        },
+        restrict: 'E',
+        link: function(scope){},
+        templateUrl: './views/projects.html'
+    };
+});
 /**
  * Created by Lance on 1/7/2016.
  */
+mod.directive('csSkillsCard', function(){
+    return {
+        scope: {
 
+        },
+        restrict: 'E',
+        link: {
+
+        },
+        templateUrl: './views/skillsCard.html'
+    }
+});
 /**
  * Created by Lance on 1/7/2016.
  */
@@ -133,7 +156,20 @@ mod.directive('csSkills', function(){
 
         },
         restrict: 'E',
-        link: {
+        link: function(){
+
+            //Sets up projects dropdown button
+            var dropdownProject = $('.dropdown-button');
+            dropdownProject.dropdown({
+                    inDuration: 300,
+                    outDuration: 225,
+                    constrain_width: true, // Does not change width of dropdown to that of the activator
+                    hover: false, // Activate on hover
+                    gutter: 0, // Spacing from edge
+                    belowOrigin: true, // Displays dropdown below the button
+                    alignment: 'right' // Displays dropdown with edge aligned to the left of button
+                }
+            );
 
         },
         templateUrl: './views/skills.html'

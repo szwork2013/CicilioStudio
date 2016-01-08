@@ -26,7 +26,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.projects', {
             url: "^/projects",
-            templateUrl: "../views/projects.html"
+            template: "<cs-projects></cs-projects>"
         })
         .state('main.skills', {
             url: '^/skills',
