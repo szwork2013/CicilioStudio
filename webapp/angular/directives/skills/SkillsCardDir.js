@@ -4,7 +4,7 @@
 mod.directive('csSkillsCard', function(){
     return {
         scope: {
-
+            skill: '&skill'
         },
         restrict: 'E',
         link: {

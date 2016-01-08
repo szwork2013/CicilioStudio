@@ -18,8 +18,8 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
     $stateProvider
         .state('main.home', {
-           url: "/",
-           template: "<cs-home></cs-home>"
+            url: "/",
+            template: "<cs-home></cs-home>"
         })
         .state('main', {
             template : "<cs-main></cs-main>"
@@ -30,18 +30,10 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.skills', {
             url: '^/skills',
-            template: "<cs-skills></cs-skills>"
+            template: "<cs-skills data-skills='{{data.skills}}'></cs-skills>"
         });
     $urlRouterProvider.otherwise("/");
 }]);
-/**
- * Created by Lance on 1/4/2016.
- */
-
-/**
- * Created by Lance on 1/5/2016.
- */
-
 /**
  * Created by Lance on 1/4/2016.
  */
@@ -62,10 +54,22 @@ mod.directive("csHome", function(){
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csMain", function(){
+
+    var csMainCtrl = ['$scope', 'csData', function($scope, csData){
+        //Saves Data to $Scope
+        csData().success(function(data) {
+            if (data){
+                $scope.data = data;
+            }else{
+                console.log('No Data');
+            }
+        });
+    }];
+
     return {
-        scope: {
-        },
+        scope: {},
         restrict: 'E',
+        controller: csMainCtrl,
         link: function(scope){
             scope.breadcrumbs = [
                 '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
@@ -101,6 +105,27 @@ mod.directive("csMain", function(){
     };
 });
 /**
+ * Created by Lance on 1/5/2016.
+ */
+
+/**
+ * Created by Lance on 1/8/2016.
+ */
+mod.factory('csData', function($http) {
+    var promise = null;
+
+    return function() {
+        if (promise) {
+            // If we've already asked for this data once,
+            // return the promise that already exists.
+            return promise;
+        } else {
+            promise = $http.get('/assets/data/data.json');
+            return promise;
+        }
+    };
+});
+/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csProjectsCards", function(){
@@ -113,7 +138,7 @@ mod.directive("csProjectsCards", function(){
                     title: "nothing"
                 }
             };
-            //$http.get('/webapp/data/projects.json').success(function(data){
+            //$http.get('/webapp/data/data.json').success(function(data){
             //    scope.projects = data.projects;
             //});
         },
@@ -138,7 +163,7 @@ mod.directive("csProjects", function(){
 mod.directive('csSkillsCard', function(){
     return {
         scope: {
-
+            skill: '&skill'
         },
         restrict: 'E',
         link: {
@@ -151,12 +176,13 @@ mod.directive('csSkillsCard', function(){
  * Created by Lance on 1/7/2016.
  */
 mod.directive('csSkills', function(){
+
     return {
         scope: {
-
+            skills: '&dataSkills'
         },
         restrict: 'E',
-        link: function(){
+        link: function(scope, elm, attrs, ctrl){
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -170,6 +196,11 @@ mod.directive('csSkills', function(){
                     alignment: 'right' // Displays dropdown with edge aligned to the left of button
                 }
             );
+
+            // To Read Skills From Attribute
+            var skills = JSON.parse(attrs.skills);
+            console.log(skills);
+
 
         },
         templateUrl: './views/skills.html'

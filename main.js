@@ -24,7 +24,7 @@ var httpServer = http.createServer(app);
 //Hosts the static files in public under /assets
 app.use(express.static(`${__dirname}/target`));
 app.use('/dependencies', express.static(`${__dirname}/node_modules`));
-app.use(favicon(__dirname + '/target/assets/images/favicon.png'));
+app.use(favicon(__dirname + '/target/assets/images/projects/ciciliostudio/favicon.png'));
 
 var cs_ports = {http: 80, https: 443 };
 

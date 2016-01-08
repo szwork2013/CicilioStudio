@@ -18,8 +18,8 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
     $stateProvider
         .state('main.home', {
-           url: "/",
-           template: "<cs-home></cs-home>"
+            url: "/",
+            template: "<cs-home></cs-home>"
         })
         .state('main', {
             template : "<cs-main></cs-main>"
@@ -30,7 +30,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.skills', {
             url: '^/skills',
-            template: "<cs-skills></cs-skills>"
+            template: "<cs-skills data-skills='{{data.skills}}'></cs-skills>"
         });
     $urlRouterProvider.otherwise("/");
 }]);

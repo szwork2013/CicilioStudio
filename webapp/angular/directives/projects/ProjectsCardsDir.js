@@ -11,7 +11,7 @@ mod.directive("csProjectsCards", function(){
                     title: "nothing"
                 }
             };
-            //$http.get('/webapp/data/projects.json').success(function(data){
+            //$http.get('/webapp/data/data.json').success(function(data){
             //    scope.projects = data.projects;
             //});
         },

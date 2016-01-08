@@ -2,12 +2,13 @@
  * Created by Lance on 1/7/2016.
  */
 mod.directive('csSkills', function(){
+
     return {
         scope: {
-
+            skills: '&dataSkills'
         },
         restrict: 'E',
-        link: function(){
+        link: function(scope, elm, attrs, ctrl){
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -21,6 +22,11 @@ mod.directive('csSkills', function(){
                     alignment: 'right' // Displays dropdown with edge aligned to the left of button
                 }
             );
+
+            // To Read Skills From Attribute
+            var skills = JSON.parse(attrs.skills);
+            console.log(skills);
+
 
         },
         templateUrl: './views/skills.html'

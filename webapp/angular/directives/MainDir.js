@@ -2,10 +2,22 @@
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csMain", function(){
+
+    var csMainCtrl = ['$scope', 'csData', function($scope, csData){
+        //Saves Data to $Scope
+        csData().success(function(data) {
+            if (data){
+                $scope.data = data;
+            }else{
+                console.log('No Data');
+            }
+        });
+    }];
+
     return {
-        scope: {
-        },
+        scope: {},
         restrict: 'E',
+        controller: csMainCtrl,
         link: function(scope){
             scope.breadcrumbs = [
                 '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
