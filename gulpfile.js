@@ -18,7 +18,8 @@ var paths = {
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
     angular: ['./webapp/angular'],
-    angularDir: ['./webapp/angular/**/*.*']
+    angularDir: ['./webapp/angular/**/*.*'],
+    angularDir2: ['/webapp/angular/**/**/*.*']
 };
 
 gulp.task('clean', function(cb) {
@@ -26,8 +27,8 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('angular', function() {
-    gulp.src([paths.angular + "/app.js",paths.angular + "/controller/*.js",
-        paths.angular + "/directives/*.js", paths.angular + "/services/*.js"])
+    gulp.src([paths.angular + "/app.js",paths.angular + "/**/*.js",
+        paths.angular + "/**/**/*.js"])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./target/angular'));
 
@@ -92,6 +93,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.dep, ['dep']);
     gulp.watch(paths.angular, ['angular']);
     gulp.watch(paths.angularDir, ['angular']);
+    gulp.watch(paths.angularDir2, ['angular']);
     gulp.watch(paths.views, ['views']);
     gulp.watch(paths.js, ['js']);
 });

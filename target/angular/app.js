@@ -27,9 +27,17 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('main.projects', {
             url: "^/projects",
             templateUrl: "../views/projects.html"
+        })
+        .state('main.skills', {
+            url: '^/skills',
+            template: "<cs-skills></cs-skills>"
         });
     $urlRouterProvider.otherwise("/");
 }]);
+/**
+ * Created by Lance on 1/4/2016.
+ */
+
 /**
  * Created by Lance on 1/4/2016.
  */
@@ -111,3 +119,23 @@ mod.directive("csProjectsCards", function(){
 /**
  * Created by Lance on 1/5/2016.
  */
+
+/**
+ * Created by Lance on 1/7/2016.
+ */
+
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive('csSkills', function(){
+    return {
+        scope: {
+
+        },
+        restrict: 'E',
+        link: {
+
+        },
+        templateUrl: './views/skills.html'
+    }
+});

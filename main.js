@@ -6,6 +6,7 @@ var express = require('express');
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
+var favicon = require('serve-favicon');
 
 //var privateKey = fs.readFileSync('sslcert/server.key', 'utf8');
 //var certificate = fs.readFileSync('sslcert/server.csr', 'utf8');
@@ -23,6 +24,7 @@ var httpServer = http.createServer(app);
 //Hosts the static files in public under /assets
 app.use(express.static(`${__dirname}/target`));
 app.use('/dependencies', express.static(`${__dirname}/node_modules`));
+app.use(favicon(__dirname + '/target/assets/images/favicon.png'));
 
 var cs_ports = {http: 80, https: 443 };
 

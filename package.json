@@ -20,7 +20,8 @@
   "dependencies": {
     "angular-materialize": "^0.1.2",
     "express": "^4.13.3",
-    "materialize-css": "^0.97.5"
+    "materialize-css": "^0.97.5",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "del": "^2.2.0",
