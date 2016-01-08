@@ -35,6 +35,27 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     $urlRouterProvider.otherwise("/");
 }]);
 /**
+ * Created by Lance on 1/5/2016.
+ */
+
+/**
+ * Created by Lance on 1/8/2016.
+ */
+mod.factory('csData', function($http) {
+    var promise = null;
+
+    return function() {
+        if (promise) {
+            // If we've already asked for this data once,
+            // return the promise that already exists.
+            return promise;
+        } else {
+            promise = $http.get('/assets/data/data.json');
+            return promise;
+        }
+    };
+});
+/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csHome", function(){
@@ -105,27 +126,6 @@ mod.directive("csMain", function(){
     };
 });
 /**
- * Created by Lance on 1/5/2016.
- */
-
-/**
- * Created by Lance on 1/8/2016.
- */
-mod.factory('csData', function($http) {
-    var promise = null;
-
-    return function() {
-        if (promise) {
-            // If we've already asked for this data once,
-            // return the promise that already exists.
-            return promise;
-        } else {
-            promise = $http.get('/assets/data/data.json');
-            return promise;
-        }
-    };
-});
-/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csProjectsCards", function(){
@@ -163,13 +163,17 @@ mod.directive("csProjects", function(){
 mod.directive('csSkillsCard', function(){
     return {
         scope: {
-            skill: '&skill'
+            skill: '&dataSkill'
         },
         restrict: 'E',
-        link: {
+        link: function(scope, elm, attrs){
 
+            // To Read Skills From Attribute
+            console.log('yo');
+            var skill = JSON.parse(attrs.skill);
+            console.log(skill);
         },
-        templateUrl: './views/skillsCard.html'
+        templateUrl: './views/skills_card.html'
     }
 });
 /**
@@ -182,7 +186,7 @@ mod.directive('csSkills', function(){
             skills: '&dataSkills'
         },
         restrict: 'E',
-        link: function(scope, elm, attrs, ctrl){
+        link: function(scope, elm, attrs){
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -199,8 +203,14 @@ mod.directive('csSkills', function(){
 
             // To Read Skills From Attribute
             var skills = JSON.parse(attrs.skills);
-            console.log(skills);
 
+            var skill = {name: "test"};
+
+            //Generate and append New Card
+            var card = $("<cs-skills-card></cs-skills-card>");
+            card.attr({'data-skill' : JSON.stringify(skill)});
+            angular.bootstrap(card, [mod.name]);
+            $('.cs-skills-card-wrapper').append(card);
 
         },
         templateUrl: './views/skills.html'

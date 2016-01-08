@@ -4,12 +4,16 @@
 mod.directive('csSkillsCard', function(){
     return {
         scope: {
-            skill: '&skill'
+            skill: '&dataSkill'
         },
         restrict: 'E',
-        link: {
+        link: function(scope, elm, attrs){
 
+            // To Read Skills From Attribute
+            console.log('yo');
+            var skill = JSON.parse(attrs.skill);
+            console.log(skill);
         },
-        templateUrl: './views/skillsCard.html'
+        templateUrl: './views/skills_card.html'
     }
 });

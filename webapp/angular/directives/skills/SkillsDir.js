@@ -8,7 +8,7 @@ mod.directive('csSkills', function(){
             skills: '&dataSkills'
         },
         restrict: 'E',
-        link: function(scope, elm, attrs, ctrl){
+        link: function(scope, elm, attrs){
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -25,8 +25,14 @@ mod.directive('csSkills', function(){
 
             // To Read Skills From Attribute
             var skills = JSON.parse(attrs.skills);
-            console.log(skills);
 
+            var skill = {name: "test"};
+
+            //Generate and append New Card
+            var card = $("<cs-skills-card></cs-skills-card>");
+            card.attr({'data-skill' : JSON.stringify(skill)});
+            angular.bootstrap(card, [mod.name]);
+            $('.cs-skills-card-wrapper').append(card);
 
         },
         templateUrl: './views/skills.html'
