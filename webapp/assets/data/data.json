@@ -23,6 +23,90 @@
           "icon_image": "/assets/images/projects/trebuchet"
         }
       ]
+    },
+    {
+      "name": "Java",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "Piano",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "Swing Dancing",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "NodeJS",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "experience": "4/5",
+      "description": "",
+      "projects" : [
+        {
+          "name" : "CicilioStudio",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet"
+        }
+      ]
     }
   ]
 }

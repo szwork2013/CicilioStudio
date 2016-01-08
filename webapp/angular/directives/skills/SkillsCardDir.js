@@ -12,6 +12,7 @@ mod.directive('csSkillsCard', function(){
             // To Read Skills From Attribute
             console.log('yo');
             var skill = JSON.parse(attrs.skill);
+            scope.skill = skill;
             console.log(skill);
         },
         templateUrl: './views/skills_card.html'
