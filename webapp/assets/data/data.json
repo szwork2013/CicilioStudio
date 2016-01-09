@@ -21,6 +21,11 @@
           "name" : "CicilioStudio",
           "url": "",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
+        },
+        {
+          "name" : "Browser Pal",
+          "url": "",
+          "icon_image": "/assets/images/projects/trebuchet/trebuchet27.jpg"
         }
       ]
     },

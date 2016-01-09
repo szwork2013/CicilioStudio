@@ -126,6 +126,25 @@ mod.factory('csData', function($http) {
     };
 });
 /**
+ * Created by Lance on 1/8/2016.
+ */
+mod.directive('csChip', function(){
+    return {
+        scope: {
+            url: '&dataUrl',
+            name: '&dataName'
+        },
+        restrict: 'E',
+        link: function(scope, elm, attrs){
+            var url = attrs.url;
+            var name = attrs.name;
+            scope.url = url;
+            scope.name = name;
+        },
+        templateUrl: './views/chip.html'
+    }
+});
+/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csProjectsCards", function(){
@@ -158,25 +177,6 @@ mod.directive("csProjects", function(){
     };
 });
 /**
- * Created by Lance on 1/8/2016.
- */
-mod.directive('csChip', function(){
-    return {
-        scope: {
-            url: '&dataUrl',
-            name: '&dataName'
-        },
-        restrict: 'E',
-        link: function(scope, elm, attrs){
-            var url = attrs.url;
-            var name = attrs.name;
-            scope.url = url;
-            scope.name = name;
-        },
-        templateUrl: './views/chip.html'
-    }
-});
-/**
  * Created by Lance on 1/7/2016.
  */
 mod.directive('csSkillsCard', function(){
@@ -188,7 +188,6 @@ mod.directive('csSkillsCard', function(){
         link: function(scope, elm, attrs){
 
             // To Read Skills From Attribute
-            console.log('yo');
             var skill = JSON.parse(attrs.skill);
             scope.skill = skill;
 
@@ -199,8 +198,8 @@ mod.directive('csSkillsCard', function(){
             for (var i=0; i<skill.projects.length; i++){
                 var actionProject = $('<cs-chip></cs-chip>')
                     .attr({
-                        'data-url': skill.projects[0].icon_image,
-                        'data-name': skill.projects[0].name
+                        'data-url': skill.projects[i].icon_image,
+                        'data-name': skill.projects[i].name
                     });
                 angular.bootstrap(actionProject, [mod.name]);
 
