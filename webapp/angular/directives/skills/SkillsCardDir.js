@@ -20,7 +20,8 @@ mod.directive('csSkillsCard', function(){
             for (var i=0; i<skill.projects.length; i++){
                 var actionProject = $('<cs-chip></cs-chip>')
                     .attr({
-                        'data-url': skill.projects[i].icon_image,
+                        'data-image-url': skill.projects[i].icon_image,
+                        'data-link-url': skill.projects[i].url,
                         'data-name': skill.projects[i].name
                     });
                 angular.bootstrap(actionProject, [mod.name]);

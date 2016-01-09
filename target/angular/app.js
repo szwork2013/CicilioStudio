@@ -131,15 +131,21 @@ mod.factory('csData', function($http) {
 mod.directive('csChip', function(){
     return {
         scope: {
-            url: '&dataUrl',
+            imageUrl: '&dataImageUrl',
+            linkUrl: '&dataLinkUrl',
             name: '&dataName'
         },
         restrict: 'E',
         link: function(scope, elm, attrs){
-            var url = attrs.url;
+            var imageUrl = attrs.imageUrl;
+            var linkUrl = attrs.linkUrl;
             var name = attrs.name;
-            scope.url = url;
+            scope.imageUrl = imageUrl;
+            scope.linkUrl = linkUrl;
             scope.name = name;
+
+            //Icon Tooltips
+            $('.tooltipped').tooltip();
         },
         templateUrl: './views/chip.html'
     }
@@ -198,7 +204,8 @@ mod.directive('csSkillsCard', function(){
             for (var i=0; i<skill.projects.length; i++){
                 var actionProject = $('<cs-chip></cs-chip>')
                     .attr({
-                        'data-url': skill.projects[i].icon_image,
+                        'data-image-url': skill.projects[i].icon_image,
+                        'data-link-url': skill.projects[i].url,
                         'data-name': skill.projects[i].name
                     });
                 angular.bootstrap(actionProject, [mod.name]);

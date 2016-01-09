@@ -19,7 +19,7 @@
       "projects" : [
         {
           "name" : "CicilioStudio",
-          "url": "",
+          "url": "main.home",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
         },
         {
