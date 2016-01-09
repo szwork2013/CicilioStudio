@@ -140,6 +140,20 @@ body {
     background: $nav-background-color;
     color: $theme-3;
   }
+
+  .cs-skills-card-projects {
+    padding: 5px;
+  }
+}
+
+//Custom Image Chip
+.cs-chip{
+  background: rgba(0,0,0,0);
+  padding-right: 10px;
+
+  img {
+    margin-right: 0;
+  }
 }
 
 //Home
@@ -165,6 +179,7 @@ body {
     }
   }
 }
+
 
 //Material Tooltipped Additions/Modifications
 .backdrop{

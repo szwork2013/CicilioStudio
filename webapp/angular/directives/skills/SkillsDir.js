@@ -27,9 +27,10 @@ mod.directive('csSkills', function(){
             var skills = JSON.parse(attrs.skills);
 
             //Generate and append New Card
-            skills.forEach(function(skill){
+            skills.forEach(function(skill) {
+
                 var card = $("<cs-skills-card></cs-skills-card>");
-                card.attr({'data-skill' : JSON.stringify(skill)});
+                card.attr({'data-skill': JSON.stringify(skill)});
                 angular.bootstrap(card, [mod.name]);
                 $('.cs-skills-card-wrapper').append(card);
             });

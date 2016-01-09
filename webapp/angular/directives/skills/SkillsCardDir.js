@@ -13,7 +13,23 @@ mod.directive('csSkillsCard', function(){
             console.log('yo');
             var skill = JSON.parse(attrs.skill);
             scope.skill = skill;
-            console.log(skill);
+
+            var actionProjects = $('.cs-skills-card-projects');
+
+            //debugger;
+
+            for (var i=0; i<skill.projects.length; i++){
+                var actionProject = $('<cs-chip></cs-chip>')
+                    .attr({
+                        'data-url': skill.projects[0].icon_image,
+                        'data-name': skill.projects[0].name
+                    });
+                angular.bootstrap(actionProject, [mod.name]);
+
+                actionProjects.append(actionProject);
+            }
+            $('.cs-skills-card-projects').append(actionProjects);
+
         },
         templateUrl: './views/skills_card.html'
     }

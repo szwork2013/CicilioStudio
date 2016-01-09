@@ -158,6 +158,25 @@ mod.directive("csProjects", function(){
     };
 });
 /**
+ * Created by Lance on 1/8/2016.
+ */
+mod.directive('csChip', function(){
+    return {
+        scope: {
+            url: '&dataUrl',
+            name: '&dataName'
+        },
+        restrict: 'E',
+        link: function(scope, elm, attrs){
+            var url = attrs.url;
+            var name = attrs.name;
+            scope.url = url;
+            scope.name = name;
+        },
+        templateUrl: './views/chip.html'
+    }
+});
+/**
  * Created by Lance on 1/7/2016.
  */
 mod.directive('csSkillsCard', function(){
@@ -172,7 +191,23 @@ mod.directive('csSkillsCard', function(){
             console.log('yo');
             var skill = JSON.parse(attrs.skill);
             scope.skill = skill;
-            console.log(skill);
+
+            var actionProjects = $('.cs-skills-card-projects');
+
+            //debugger;
+
+            for (var i=0; i<skill.projects.length; i++){
+                var actionProject = $('<cs-chip></cs-chip>')
+                    .attr({
+                        'data-url': skill.projects[0].icon_image,
+                        'data-name': skill.projects[0].name
+                    });
+                angular.bootstrap(actionProject, [mod.name]);
+
+                actionProjects.append(actionProject);
+            }
+            $('.cs-skills-card-projects').append(actionProjects);
+
         },
         templateUrl: './views/skills_card.html'
     }
@@ -206,9 +241,10 @@ mod.directive('csSkills', function(){
             var skills = JSON.parse(attrs.skills);
 
             //Generate and append New Card
-            skills.forEach(function(skill){
+            skills.forEach(function(skill) {
+
                 var card = $("<cs-skills-card></cs-skills-card>");
-                card.attr({'data-skill' : JSON.stringify(skill)});
+                card.attr({'data-skill': JSON.stringify(skill)});
                 angular.bootstrap(card, [mod.name]);
                 $('.cs-skills-card-wrapper').append(card);
             });
