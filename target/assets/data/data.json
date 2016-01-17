@@ -24,7 +24,7 @@
         },
         {
           "name" : "Browser Pal",
-          "url": "",
+          "url": "main.projects",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet27.jpg"
         }
       ]
@@ -36,7 +36,7 @@
       "projects" : [
         {
           "name" : "CicilioStudio",
-          "url": "",
+          "url": "main.skills",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
         }
       ]

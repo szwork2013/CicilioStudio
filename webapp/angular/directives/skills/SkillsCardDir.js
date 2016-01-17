@@ -30,6 +30,8 @@ mod.directive('csSkillsCard', function(){
             }
             $('.cs-skills-card-projects').append(actionProjects);
 
+
+
         },
         templateUrl: './views/skills_card.html'
     }

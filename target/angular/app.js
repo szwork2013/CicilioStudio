@@ -129,6 +129,19 @@ mod.factory('csData', function($http) {
  * Created by Lance on 1/8/2016.
  */
 mod.directive('csChip', function(){
+
+    var chipCtrl = ['$state', function($state){
+        //Allows Clicks on Chips
+        $('.cs-chip').click(function(event){
+            var ref = $(this).attr('ui-serf'); //ui-serf reference
+            $state.go(ref); //Dynamically goes to different state
+
+            //Need to clear backdrops and siblings, otherwise they say on the screen
+            $('.backdrop').siblings('span').css('display', 'none');
+            $('.backdrop').css('display', 'none');
+        });
+    }];
+
     return {
         scope: {
             imageUrl: '&dataImageUrl',
@@ -136,6 +149,7 @@ mod.directive('csChip', function(){
             name: '&dataName'
         },
         restrict: 'E',
+        controller: chipCtrl,
         link: function(scope, elm, attrs){
             var imageUrl = attrs.imageUrl;
             var linkUrl = attrs.linkUrl;
@@ -146,46 +160,9 @@ mod.directive('csChip', function(){
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
-
-            //Allows Clicks on Chips
-            //$('.cs-chip').click(function(event){
-                //console.log('test');
-            //})
         },
         templateUrl: './views/chip.html'
     }
-});
-/**
- * Created by Lance on 1/4/2016.
- */
-mod.directive("csProjectsCards", function(){
-    return {
-        scope: {},
-        restrict: 'A',
-        link: function($http, scope){
-            scope.projects = {
-                projects : {
-                    title: "nothing"
-                }
-            };
-            //$http.get('/webapp/data/data.json').success(function(data){
-            //    scope.projects = data.projects;
-            //});
-        },
-        templateUrl: './views/projects_cards.html'
-    };
-});
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive("csProjects", function(){
-    return {
-        scope: {
-        },
-        restrict: 'E',
-        link: function(scope){},
-        templateUrl: './views/projects.html'
-    };
 });
 /**
  * Created by Lance on 1/7/2016.
@@ -218,6 +195,8 @@ mod.directive('csSkillsCard', function(){
                 actionProjects.append(actionProject);
             }
             $('.cs-skills-card-projects').append(actionProjects);
+
+
 
         },
         templateUrl: './views/skills_card.html'
@@ -263,4 +242,36 @@ mod.directive('csSkills', function(){
         },
         templateUrl: './views/skills.html'
     }
+});
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csProjectsCards", function(){
+    return {
+        scope: {},
+        restrict: 'A',
+        link: function($http, scope){
+            scope.projects = {
+                projects : {
+                    title: "nothing"
+                }
+            };
+            //$http.get('/webapp/data/data.json').success(function(data){
+            //    scope.projects = data.projects;
+            //});
+        },
+        templateUrl: './views/projects_cards.html'
+    };
+});
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive("csProjects", function(){
+    return {
+        scope: {
+        },
+        restrict: 'E',
+        link: function(scope){},
+        templateUrl: './views/projects.html'
+    };
 });
