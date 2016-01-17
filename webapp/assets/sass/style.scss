@@ -141,19 +141,33 @@ body {
     color: $theme-3;
   }
 
-  .cs-skills-card-projects {
-    padding: 5px;
+  .cs-skills-card-chip-holder {
+
+    padding: .5rem;
+
+    .cs-skills-card-projects {
+      margin: 0;
+
+      .col {
+        padding-left: .5rem;
+        padding-right: .5rem;
+      }
+    }
   }
+
 }
 
 //Custom Image Chip
 .cs-chip{
   cursor: pointer;
-
   background: rgba(0,0,0,0);
-  padding-right: 10px;
+  padding-left: .5rem;
+  //padding-right: 10px;
 
   img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     margin-right: 0;
   }
 
@@ -192,6 +206,14 @@ body {
   background: $theme-1;
 }
 
+//Helper Classes
+.cs-full-width {
+  width: 100%;
+}
+
+.cs-inherit-width {
+  width: inherit;
+}
 
 //Font Awesome Color Additions
 .cs-fa-linkedin-square {

@@ -19,6 +19,11 @@ mod.directive('csChip', function(){
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
+
+            //Allows Clicks on Chips
+            //$('.cs-chip').click(function(event){
+                //console.log('test');
+            //})
         },
         templateUrl: './views/chip.html'
     }
