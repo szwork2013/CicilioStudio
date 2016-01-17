@@ -100,6 +100,11 @@ mod.directive("csMain", function(){
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
+
+            //Link Mobile Nav Back Button to Browser Back Button
+            $('.cs-mobile-back').click(function(event){
+                window.history.back();
+            });
         },
         templateUrl: './views/main.html'
     };
@@ -163,6 +168,38 @@ mod.directive('csChip', function(){
         },
         templateUrl: './views/chip.html'
     }
+});
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csProjectsCards", function(){
+    return {
+        scope: {},
+        restrict: 'A',
+        link: function($http, scope){
+            scope.projects = {
+                projects : {
+                    title: "nothing"
+                }
+            };
+            //$http.get('/webapp/data/data.json').success(function(data){
+            //    scope.projects = data.projects;
+            //});
+        },
+        templateUrl: './views/projects_cards.html'
+    };
+});
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive("csProjects", function(){
+    return {
+        scope: {
+        },
+        restrict: 'E',
+        link: function(scope){},
+        templateUrl: './views/projects.html'
+    };
 });
 /**
  * Created by Lance on 1/7/2016.
@@ -242,36 +279,4 @@ mod.directive('csSkills', function(){
         },
         templateUrl: './views/skills.html'
     }
-});
-/**
- * Created by Lance on 1/4/2016.
- */
-mod.directive("csProjectsCards", function(){
-    return {
-        scope: {},
-        restrict: 'A',
-        link: function($http, scope){
-            scope.projects = {
-                projects : {
-                    title: "nothing"
-                }
-            };
-            //$http.get('/webapp/data/data.json').success(function(data){
-            //    scope.projects = data.projects;
-            //});
-        },
-        templateUrl: './views/projects_cards.html'
-    };
-});
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive("csProjects", function(){
-    return {
-        scope: {
-        },
-        restrict: 'E',
-        link: function(scope){},
-        templateUrl: './views/projects.html'
-    };
 });

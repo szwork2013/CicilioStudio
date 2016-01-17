@@ -48,6 +48,11 @@ mod.directive("csMain", function(){
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
+
+            //Link Mobile Nav Back Button to Browser Back Button
+            $('.cs-mobile-back').click(function(event){
+                window.history.back();
+            });
         },
         templateUrl: './views/main.html'
     };
