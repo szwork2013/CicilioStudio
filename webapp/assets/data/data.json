@@ -58,11 +58,6 @@
       "experience": "4/5",
       "description": "",
       "projects" : [
-        {
-          "name" : "CicilioStudio",
-          "url": "",
-          "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
-        }
       ]
     },
     {

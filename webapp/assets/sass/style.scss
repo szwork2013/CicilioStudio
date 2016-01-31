@@ -145,6 +145,13 @@ body {
 
     padding: .5rem;
 
+    .cs-skills-card-text {
+      color: $theme-3;
+      font-size: .75rem;
+      font-weight: 300;
+      padding-bottom: 5px;
+    }
+
     .cs-skills-card-projects {
       margin: 0;
 
