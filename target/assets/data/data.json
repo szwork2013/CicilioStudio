@@ -79,7 +79,7 @@
       "projects" : [
         {
           "name" : "CicilioStudio",
-          "url": "",
+          "url": "main.skills",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
         }
       ]
@@ -90,8 +90,8 @@
       "description": "",
       "projects" : [
         {
-          "name" : "CicilioStudio",
-          "url": "",
+          "name" : "Trebuchet",
+          "url": "main.projects",
           "icon_image": "/assets/images/projects/trebuchet/trebuchet21.jpg"
         }
       ]
@@ -108,5 +108,10 @@
         }
       ]
     }
-  ]
+  ],
+  "life" : {
+    "blog" : "Music and Dancing ",
+    "images": [],
+    "videos": []
+  }
 }

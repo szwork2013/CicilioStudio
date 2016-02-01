@@ -18,9 +18,13 @@ var paths = {
     data: ['./webapp/assets/data/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
-    angular: ['./webapp/angular'],
-    angularDir: ['./webapp/angular/**/*.*'],
-    angularDir2: ['/webapp/angular/**/**/*.*']
+    angular: {
+        app: './webapp/angular/app.js',
+        routing: './webapp/angular/routing.js',
+        controllers: './webapp/angular/controllers/**',
+        directives: './webapp/angular/directives/**',
+        services: './webapp/angular/services/**'
+    }
 };
 
 gulp.task('clean', function(cb) {
@@ -28,8 +32,10 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('angular', function() {
-    gulp.src([paths.angular + "/app.js",paths.angular + "/**/*.js",
-        paths.angular + "/**/**/*.js"])
+    gulp.src([paths.angular.app, paths.angular.routing,
+        paths.angular.services, paths.angular.controllers,
+        paths.angular.directives
+        ])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./target/angular'));
 
@@ -97,9 +103,11 @@ gulp.task('watch', function () {
     gulp.watch(paths.images, ['images']);
     gulp.watch(paths.main, ['main']);
     gulp.watch(paths.dep, ['dep']);
-    gulp.watch(paths.angular, ['angular']);
-    gulp.watch(paths.angularDir, ['angular']);
-    gulp.watch(paths.angularDir2, ['angular']);
+    gulp.watch(paths.angular.app, ['angular']);
+    gulp.watch(paths.angular.routing, ['angular']);
+    gulp.watch(paths.angular.controllers, ['angular']);
+    gulp.watch(paths.angular.directives, ['angular']);
+    gulp.watch(paths.angular.services, ['angular']);
     gulp.watch(paths.views, ['views']);
     gulp.watch(paths.js, ['js']);
     gulp.watch(paths.data, ['data']);

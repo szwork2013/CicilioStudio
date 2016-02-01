@@ -8,12 +8,14 @@ mod.directive('csApp', function(){
 });
 
 //cs: cicilio studio
+//Creates the angular app element
 var el = document.createElement('cs-app');
 angular.bootstrap(el, [mod.name]);
 $('.cs-app-class').append(el);
-
+/**
+ * Created by Lance on 1/31/2016.
+ */
 //Routing
-
 mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $stateProvider
@@ -22,7 +24,22 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             template: "<cs-home></cs-home>"
         })
         .state('main', {
-            template : "<cs-main></cs-main>"
+            template : "<cs-main></cs-main>",
+            resolve: {
+                data: ['csData', function(csData) {
+                    var info = {};
+                    csData.get().success(function(jsonData) {
+                        if (jsonData){
+                            info = jsonData;
+                        }else{
+                            console.log('No Data');
+                        }
+                    });
+                    return info;
+                }]
+            },
+            controller: "csMainCtrl",
+            controllerAs: "mainC"
         })
         .state('main.projects', {
             url: "^/projects",
@@ -30,85 +47,17 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.skills', {
             url: '^/skills',
-            template: "<cs-skills data-skills='{{data.skills}}'></cs-skills>"
-        });
+            template: "</cs-skills>",
+            controller: "csSkillsCtrl",
+            controllerAs: "skillsC"
+        }).state('main.life', {
+            url: '^/life',
+            template: "<cs-skills data-life='{}'></cs-skills>",
+            controller: "csSkillsCtrl",
+            controllerAs: "skillsC"
+    });
     $urlRouterProvider.otherwise("/");
 }]);
-/**
- * Created by Lance on 1/4/2016.
- */
-mod.directive("csHome", function(){
-    return {
-        scope: {
-        },
-        restrict: 'E',
-        link: function(scope){
-
-            //On hover change cs-home background image
-
-        },
-        templateUrl: './views/home.html'
-    };
-});
-/**
- * Created by Lance on 1/4/2016.
- */
-mod.directive("csMain", function(){
-
-    var csMainCtrl = ['$scope', 'csData', function($scope, csData){
-        //Saves Data to $Scope
-        csData().success(function(data) {
-            if (data){
-                $scope.data = data;
-            }else{
-                console.log('No Data');
-            }
-        });
-    }];
-
-    return {
-        scope: {},
-        restrict: 'E',
-        controller: csMainCtrl,
-        link: function(scope){
-            scope.breadcrumbs = [
-                '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
-                '<a href="#!" class="cs-breadcrumb valign">Second</a>',
-                '<a href="#!" class="cs-breadcrumb valign">Third</a>'
-            ];
-
-            //Sets up mobile side nav
-            var menu = $('.cs-mobile-menu');
-            menu.sideNav({
-                menuWidth: 200,
-                edge: 'right',
-                closeOnClick: true
-            });
-
-            //Sets up projects dropdown button
-            var dropdownProject = $('.dropdown-button');
-            dropdownProject.dropdown({
-                    inDuration: 300,
-                    outDuration: 225,
-                    constrain_width: false, // Does not change width of dropdown to that of the activator
-                    hover: true, // Activate on hover
-                    gutter: 0, // Spacing from edge
-                    belowOrigin: true, // Displays dropdown below the button
-                    alignment: 'left' // Displays dropdown with edge aligned to the left of button
-                }
-            );
-
-            //Icon Tooltips
-            $('.tooltipped').tooltip();
-
-            //Link Mobile Nav Back Button to Browser Back Button
-            $('.cs-mobile-back').click(function(event){
-                window.history.back();
-            });
-        },
-        templateUrl: './views/main.html'
-    };
-});
 /**
  * Created by Lance on 1/5/2016.
  */
@@ -119,17 +68,56 @@ mod.directive("csMain", function(){
 mod.factory('csData', function($http) {
     var promise = null;
 
-    return function() {
-        if (promise) {
-            // If we've already asked for this data once,
-            // return the promise that already exists.
-            return promise;
-        } else {
-            promise = $http.get('/assets/data/data.json');
-            return promise;
+    return {
+        get: function() {
+            if (promise) {
+                // If we've already asked for this data once,
+                // return the promise that already exists.
+                return promise;
+            } else {
+                promise = $http.get('/assets/data/data.json');
+                console.log('hardcoded data path in dataService');
+                return promise;
+            }
         }
-    };
+    }
 });
+/**
+ * Created by Lance on 1/31/2016.
+ */
+mod.factory('csLoadScreen', function() {
+    var promise = null;
+
+    return {
+
+        start: function(){
+
+        },
+
+        stop: function(){
+
+        }
+    }
+});
+/**
+ * Created by Lance on 1/31/2016.
+ */
+mod.controller("csMainCtrl", ['$state', 'data', function($state, data){
+    //Saves Data to $Scope
+    this.data = data;
+}]);
+/**
+ * Created by Lance on 1/31/2016.
+ */
+mod.controller("csProjectsCtrl" ,['$scope', function($scope){
+
+}]);
+/**
+ * Created by Lance on 1/31/2016.
+ */
+mod.controller("csSkillsCtrl" ,['$scope', function($scope){
+
+}]);
 /**
  * Created by Lance on 1/8/2016.
  */
@@ -202,6 +190,10 @@ mod.directive("csProjects", function(){
     };
 });
 /**
+ * Created by Lance on 1/31/2016.
+ */
+
+/**
  * Created by Lance on 1/7/2016.
  */
 mod.directive('csSkillsCard', function(){
@@ -249,7 +241,10 @@ mod.directive('csSkills', function(){
             skills: '&dataSkills'
         },
         restrict: 'E',
-        link: function(scope, elm, attrs){
+        link: function(scope, elm, attrs, $controller){
+
+            console.log($controller.data);
+            console.log('test');
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -267,16 +262,79 @@ mod.directive('csSkills', function(){
             // To Read Skills From Attribute
             var skills = JSON.parse(attrs.skills);
 
-            //Generate and append New Card
-            skills.forEach(function(skill) {
-
-                var card = $("<cs-skills-card></cs-skills-card>");
-                card.attr({'data-skill': JSON.stringify(skill)});
-                angular.bootstrap(card, [mod.name]);
-                $('.cs-skills-card-wrapper').append(card);
-            });
+            ////Generate and append New Card
+            //skills.forEach(function(skill) {
+            //
+            //    var card = $("<cs-skills-card></cs-skills-card>");
+            //    card.attr({'data-skill': JSON.stringify(skill)});
+            //    angular.bootstrap(card, [mod.name]);
+            //    $('.cs-skills-card-wrapper').append(card);
+            //});
 
         },
         templateUrl: './views/skills.html'
     }
+});
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csHome", function(){
+    return {
+        scope: {
+        },
+        restrict: 'E',
+        link: function(scope){
+
+            //On hover change cs-home background image
+
+        },
+        templateUrl: './views/home.html'
+    };
+});
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csMain", function(){
+
+    return {
+        scope: {},
+        restrict: 'E',
+        link: function(scope){
+            scope.breadcrumbs = [
+                '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
+                '<a href="#!" class="cs-breadcrumb valign">Second</a>',
+                '<a href="#!" class="cs-breadcrumb valign">Third</a>'
+            ];
+
+            //Sets up mobile side nav
+            var menu = $('.cs-mobile-menu');
+            menu.sideNav({
+                menuWidth: 200,
+                edge: 'right',
+                closeOnClick: true
+            });
+
+            //Sets up projects dropdown button
+            var dropdownProject = $('.dropdown-button');
+            dropdownProject.dropdown({
+                    inDuration: 300,
+                    outDuration: 225,
+                    constrain_width: false, // Does not change width of dropdown to that of the activator
+                    hover: true, // Activate on hover
+                    gutter: 0, // Spacing from edge
+                    belowOrigin: true, // Displays dropdown below the button
+                    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+                }
+            );
+
+            //Icon Tooltips
+            $('.tooltipped').tooltip();
+
+            //Link Mobile Nav Back Button to Browser Back Button
+            $('.cs-mobile-back').click(function(event){
+                window.history.back();
+            });
+        },
+        templateUrl: './views/main.html'
+    };
 });
