@@ -1,11 +1,11 @@
 /**
  * Created by Lance on 1/8/2016.
  */
-mod.factory('csData', function($http) {
+mod.factory('csData', ($http) => {
     var promise = null;
 
     return {
-        get: function() {
+        get: () => {
             if (promise) {
                 // If we've already asked for this data once,
                 // return the promise that already exists.

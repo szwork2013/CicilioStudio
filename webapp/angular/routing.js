@@ -12,16 +12,18 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('main', {
             template : "<cs-main></cs-main>",
             resolve: {
-                data: ['csData', function(csData) {
-                    var info = {};
-                    csData.get().success(function(jsonData) {
+                dataResolver: ['csData', (csData) => {
+                    debugger;
+                    let info = {};
+                    return csData.get().success((jsonData) => {
                         if (jsonData){
                             info = jsonData;
                         }else{
                             console.log('No Data');
+                            return false;
                         }
+                        return info;
                     });
-                    return info;
                 }]
             },
             controller: "csMainCtrl",
@@ -38,7 +40,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controllerAs: "skillsC"
         }).state('main.life', {
             url: '^/life',
-            template: "<cs-skills data-life='{}'></cs-skills>",
+            template: "<cs-skills></cs-skills>",
             controller: "csSkillsCtrl",
             controllerAs: "skillsC"
     });

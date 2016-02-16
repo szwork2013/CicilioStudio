@@ -8,6 +8,7 @@ var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
 var concat = require('gulp-concat');
+var babel = require('gulp-babel');
 
 var paths = {
     sass: ['./webapp/assets/sass/*.scss'],
@@ -36,6 +37,9 @@ gulp.task('angular', function() {
         paths.angular.services, paths.angular.controllers,
         paths.angular.directives
         ])
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./target/angular'));
 
@@ -52,8 +56,12 @@ gulp.task('views', function() {
         .pipe(gulp.dest('./target/views'));
 });
 
+//Compiles es6 -> es5
 gulp.task('js', function() {
     gulp.src(paths.js)
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(gulp.dest('./target/assets/js'));
 });
 

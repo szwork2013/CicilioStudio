@@ -6,12 +6,13 @@ mod.directive("csMain", function(){
     return {
         scope: {},
         restrict: 'E',
-        link: function(scope){
-            scope.breadcrumbs = [
-                '<a href="#!" class="cs-breadcrumb cs-left-margin valign">First</a>',
-                '<a href="#!" class="cs-breadcrumb valign">Second</a>',
-                '<a href="#!" class="cs-breadcrumb valign">Third</a>'
-            ];
+        link: function(scope, a, b, $controller){
+            debugger;
+            let data = {};
+            if (scope.$parent.mainC.data){
+                data = scope.$parent.mainC.data;
+            }
+
 
             //Sets up mobile side nav
             var menu = $('.cs-mobile-menu');

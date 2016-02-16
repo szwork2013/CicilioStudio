@@ -27,7 +27,7 @@ mod.directive('csSkills', function(){
             );
 
             // To Read Skills From Attribute
-            var skills = JSON.parse(attrs.skills);
+            //var skills = JSON.parse(attrs.skills);
 
             ////Generate and append New Card
             //skills.forEach(function(skill) {
