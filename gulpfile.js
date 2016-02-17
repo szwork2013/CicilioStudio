@@ -16,6 +16,7 @@ var paths = {
     images: ['./webapp/assets/images/**'],
     views: ['./webapp/views/*.html'],
     js: ['./webapp/assets/js/**'],
+    tests: ['./webapp/tests/**'],
     data: ['./webapp/assets/data/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
@@ -119,6 +120,18 @@ gulp.task('watch', function () {
     gulp.watch(paths.views, ['views']);
     gulp.watch(paths.js, ['js']);
     gulp.watch(paths.data, ['data']);
+    gulp.watch(paths.tests, ['test']);
 });
 
 gulp.task('default', ['watch', 'views', 'sass', 'images', 'main', 'angular', 'js', 'data']);
+
+
+//Testing Build tasks
+
+gulp.task('test', function(){
+    gulp.src(paths.tests)
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('target/tests'));
+});

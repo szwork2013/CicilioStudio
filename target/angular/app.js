@@ -223,6 +223,94 @@ mod.directive('csChip', function () {
         templateUrl: './views/chip.html'
     };
 });
+'use strict';
+
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive('csSkillsCard', function () {
+    return {
+        scope: {
+            skill: '&dataSkill'
+        },
+        restrict: 'E',
+        link: function link(scope, elm, attrs) {
+
+            var skill = {};
+
+            try {
+                skill = JSON.parse(attrs.skill);
+                scope.skill = skill;
+            } catch (e) {
+                console.log('Error: ' + e);
+                scope.skill = {};
+            }
+
+            var actionProjects = $('.cs-skills-card-projects');
+
+            //debugger;
+
+            for (var i = 0; i < skill.projects.length; i++) {
+                var actionProject = $('<cs-chip></cs-chip>').attr({
+                    'data-image-url': skill.projects[i].icon_image,
+                    'data-link-url': skill.projects[i].url,
+                    'data-name': skill.projects[i].name
+                });
+                angular.bootstrap(actionProject, [mod.name]);
+
+                actionProjects.append(actionProject);
+            }
+            $('.cs-skills-card-projects').append(actionProjects);
+        },
+        templateUrl: './views/skills_card.html'
+    };
+});
+'use strict';
+
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive('csSkills', function () {
+
+    return {
+        scope: {
+            skills: '&dataSkills'
+        },
+        restrict: 'E',
+        link: function link(scope) {
+            //Where the data comes from
+            var data = {};
+            if (scope.$parent.mainC.data) {
+                data = scope.$parent.mainC.data;
+            }
+
+            //Sets up projects dropdown button
+            var dropdownProject = $('.dropdown-button');
+            dropdownProject.dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: true, // Does not change width of dropdown to that of the activator
+                hover: false, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: true, // Displays dropdown below the button
+                alignment: 'right' // Displays dropdown with edge aligned to the left of button
+            });
+
+            // To Read Skills From Attribute
+            var skills = data.skills;
+
+            //Generate and append New Card
+            skills.forEach(function (skill) {
+
+                var card = $("<cs-skills-card></cs-skills-card>");
+                card.attr({ 'data-skill': JSON.stringify(skill) });
+                angular.bootstrap(card, [mod.name]);
+                $('.cs-skills-card-wrapper').append(card);
+            });
+        },
+        templateUrl: './views/skills.html'
+    };
+});
 "use strict";
 
 /**
@@ -257,86 +345,6 @@ mod.directive("csProjects", function () {
         link: function link(scope) {},
         templateUrl: './views/projects.html'
     };
-});
-'use strict';
-
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive('csSkillsCard', function () {
-    return {
-        scope: {
-            skill: '&dataSkill'
-        },
-        restrict: 'E',
-        link: function link(scope, elm, attrs) {
-
-            // To Read Skills From Attribute
-            var skill = JSON.parse(attrs.skill);
-            scope.skill = skill;
-
-            var actionProjects = $('.cs-skills-card-projects');
-
-            //debugger;
-
-            for (var i = 0; i < skill.projects.length; i++) {
-                var actionProject = $('<cs-chip></cs-chip>').attr({
-                    'data-image-url': skill.projects[i].icon_image,
-                    'data-link-url': skill.projects[i].url,
-                    'data-name': skill.projects[i].name
-                });
-                angular.bootstrap(actionProject, [mod.name]);
-
-                actionProjects.append(actionProject);
-            }
-            $('.cs-skills-card-projects').append(actionProjects);
-        },
-        templateUrl: './views/skills_card.html'
-    };
-});
-'use strict';
-
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive('csSkills', function () {
-
-            return {
-                        scope: {
-                                    skills: '&dataSkills'
-                        },
-                        restrict: 'E',
-                        link: function link(scope, elm, attrs, $controller) {
-
-                                    console.log($controller.data);
-                                    console.log('test');
-
-                                    //Sets up projects dropdown button
-                                    var dropdownProject = $('.dropdown-button');
-                                    dropdownProject.dropdown({
-                                                inDuration: 300,
-                                                outDuration: 225,
-                                                constrain_width: true, // Does not change width of dropdown to that of the activator
-                                                hover: false, // Activate on hover
-                                                gutter: 0, // Spacing from edge
-                                                belowOrigin: true, // Displays dropdown below the button
-                                                alignment: 'right' // Displays dropdown with edge aligned to the left of button
-                                    });
-
-                                    // To Read Skills From Attribute
-                                    //var skills = JSON.parse(attrs.skills);
-
-                                    ////Generate and append New Card
-                                    //skills.forEach(function(skill) {
-                                    //
-                                    //    var card = $("<cs-skills-card></cs-skills-card>");
-                                    //    card.attr({'data-skill': JSON.stringify(skill)});
-                                    //    angular.bootstrap(card, [mod.name]);
-                                    //    $('.cs-skills-card-wrapper').append(card);
-                                    //});
-                        },
-                        templateUrl: './views/skills.html'
-            };
 });
 'use strict';
 

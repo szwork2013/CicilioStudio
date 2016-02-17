@@ -9,9 +9,15 @@ mod.directive('csSkillsCard', function(){
         restrict: 'E',
         link: function(scope, elm, attrs){
 
-            // To Read Skills From Attribute
-            var skill = JSON.parse(attrs.skill);
-            scope.skill = skill;
+            let skill = {};
+
+            try{
+                skill = JSON.parse(attrs.skill);
+                scope.skill = skill;
+            }catch (e) {
+                console.log ('Error: ' + e);
+                scope.skill = {};
+            }
 
             var actionProjects = $('.cs-skills-card-projects');
 
@@ -29,9 +35,6 @@ mod.directive('csSkillsCard', function(){
                 actionProjects.append(actionProject);
             }
             $('.cs-skills-card-projects').append(actionProjects);
-
-
-
         },
         templateUrl: './views/skills_card.html'
     }
