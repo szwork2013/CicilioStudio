@@ -13,7 +13,6 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             template : "<cs-main></cs-main>",
             resolve: {
                 dataResolver: ['csData', (csData) => {
-                    debugger;
                     let info = {};
                     return csData.get().success((jsonData) => {
                         if (jsonData){
@@ -35,7 +34,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.skills', {
             url: '^/skills',
-            template: "</cs-skills>",
+            template: "<cs-skills></cs-skills>",
             controller: "csSkillsCtrl",
             controllerAs: "skillsC"
         }).state('main.life', {

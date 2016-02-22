@@ -3,7 +3,6 @@
  */
 mod.controller("csMainCtrl", ['$scope', '$state', 'csDataModel', 'dataResolver', function($scope, $state, csDataModel, dataResolver){
     //Saves Data to $Scope
-    debugger;
 
     this.data = {};
     //Initializes the data being saved

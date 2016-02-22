@@ -7,13 +7,11 @@ mod.directive('csSkills', function(){
         scope: {
             skills: '&dataSkills'
         },
+        controller: 'csSkillsCtrl',
+        controllerAs: 'skillsC',
         restrict: 'E',
         link: function(scope){
             //Where the data comes from
-            let data = {};
-            if (scope.$parent.mainC.data){
-                data = scope.$parent.mainC.data;
-            }
 
             //Sets up projects dropdown button
             var dropdownProject = $('.dropdown-button');
@@ -27,18 +25,6 @@ mod.directive('csSkills', function(){
                     alignment: 'right' // Displays dropdown with edge aligned to the left of button
                 }
             );
-
-            // To Read Skills From Attribute
-            var skills = data.skills;
-
-            //Generate and append New Card
-            skills.forEach(function(skill) {
-
-                var card = $("<cs-skills-card></cs-skills-card>");
-                card.attr({'data-skill': JSON.stringify(skill)});
-                angular.bootstrap(card, [mod.name]);
-                $('.cs-skills-card-wrapper').append(card);
-            });
 
         },
         templateUrl: './views/skills.html'

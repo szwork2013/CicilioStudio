@@ -75,6 +75,11 @@ body {
 
       .cs-siteicon {
         margin-left: $buffer;
+
+          &:hover {
+            color: $theme-4;
+            @include cs-fade-in-color($fade-color-time);
+          }
       }
       .cs-mobile-menu {
         margin-right: $buffer;
@@ -144,6 +149,7 @@ body {
   .cs-skills-card-chip-holder {
 
     padding: .5rem;
+    height: 60px;
 
     .cs-skills-card-text {
       color: $theme-3;

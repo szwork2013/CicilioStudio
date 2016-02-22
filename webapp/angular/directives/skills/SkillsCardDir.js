@@ -1,40 +1,23 @@
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive('csSkillsCard', function(){
+mod.directive('csSkillsCard', () => {
     return {
         scope: {
-            skill: '&dataSkill'
+            skillString: '@skill'
         },
         restrict: 'E',
         link: function(scope, elm, attrs){
 
-            let skill = {};
-
+            // Parses skillString to js object, adds it to scope.skill
             try{
-                skill = JSON.parse(attrs.skill);
+                let skill = JSON.parse(scope.skillString);
                 scope.skill = skill;
             }catch (e) {
                 console.log ('Error: ' + e);
                 scope.skill = {};
             }
 
-            var actionProjects = $('.cs-skills-card-projects');
-
-            //debugger;
-
-            for (var i=0; i<skill.projects.length; i++){
-                var actionProject = $('<cs-chip></cs-chip>')
-                    .attr({
-                        'data-image-url': skill.projects[i].icon_image,
-                        'data-link-url': skill.projects[i].url,
-                        'data-name': skill.projects[i].name
-                    });
-                angular.bootstrap(actionProject, [mod.name]);
-
-                actionProjects.append(actionProject);
-            }
-            $('.cs-skills-card-projects').append(actionProjects);
         },
         templateUrl: './views/skills_card.html'
     }

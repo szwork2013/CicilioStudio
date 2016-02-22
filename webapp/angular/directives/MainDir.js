@@ -7,7 +7,6 @@ mod.directive("csMain", function(){
         scope: {},
         restrict: 'E',
         link: function(scope, a, b, $controller){
-            debugger;
             let data = {};
             if (scope.$parent.mainC.data){
                 data = scope.$parent.mainC.data;

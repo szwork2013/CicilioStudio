@@ -29,7 +29,6 @@ mod.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         template: "<cs-main></cs-main>",
         resolve: {
             dataResolver: ['csData', function (csData) {
-                debugger;
                 var info = {};
                 return csData.get().success(function (jsonData) {
                     if (jsonData) {
@@ -49,7 +48,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         template: "<cs-projects></cs-projects>"
     }).state('main.skills', {
         url: '^/skills',
-        template: "</cs-skills>",
+        template: "<cs-skills></cs-skills>",
         controller: "csSkillsCtrl",
         controllerAs: "skillsC"
     }).state('main.life', {
@@ -154,7 +153,6 @@ mod.controller("csMainCtrl", ['$scope', '$state', 'csDataModel', 'dataResolver',
     var _this = this;
 
     //Saves Data to $Scope
-    debugger;
 
     this.data = {};
     //Initializes the data being saved
@@ -179,7 +177,6 @@ mod.controller("csProjectsCtrl", ['$scope', function ($scope) {}]);
  * Created by Lance on 1/31/2016.
  */
 mod.controller("csSkillsCtrl", ['$scope', 'csDataModel', function ($scope, csDataModel) {
-  debugger;
   this.data = csDataModel.getData();
 }]);
 'use strict';
@@ -203,112 +200,18 @@ mod.directive('csChip', function () {
 
     return {
         scope: {
-            imageUrl: '&dataImageUrl',
-            linkUrl: '&dataLinkUrl',
-            name: '&dataName'
+            imageUrl: '@csDataImageUrl',
+            linkUrl: '@csDataLinkUrl',
+            name: '@csDataName'
         },
         restrict: 'E',
         controller: chipCtrl,
         link: function link(scope, elm, attrs) {
-            var imageUrl = attrs.imageUrl;
-            var linkUrl = attrs.linkUrl;
-            var name = attrs.name;
-            scope.imageUrl = imageUrl;
-            scope.linkUrl = linkUrl;
-            scope.name = name;
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
         },
         templateUrl: './views/chip.html'
-    };
-});
-'use strict';
-
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive('csSkillsCard', function () {
-    return {
-        scope: {
-            skill: '&dataSkill'
-        },
-        restrict: 'E',
-        link: function link(scope, elm, attrs) {
-
-            var skill = {};
-
-            try {
-                skill = JSON.parse(attrs.skill);
-                scope.skill = skill;
-            } catch (e) {
-                console.log('Error: ' + e);
-                scope.skill = {};
-            }
-
-            var actionProjects = $('.cs-skills-card-projects');
-
-            //debugger;
-
-            for (var i = 0; i < skill.projects.length; i++) {
-                var actionProject = $('<cs-chip></cs-chip>').attr({
-                    'data-image-url': skill.projects[i].icon_image,
-                    'data-link-url': skill.projects[i].url,
-                    'data-name': skill.projects[i].name
-                });
-                angular.bootstrap(actionProject, [mod.name]);
-
-                actionProjects.append(actionProject);
-            }
-            $('.cs-skills-card-projects').append(actionProjects);
-        },
-        templateUrl: './views/skills_card.html'
-    };
-});
-'use strict';
-
-/**
- * Created by Lance on 1/7/2016.
- */
-mod.directive('csSkills', function () {
-
-    return {
-        scope: {
-            skills: '&dataSkills'
-        },
-        restrict: 'E',
-        link: function link(scope) {
-            //Where the data comes from
-            var data = {};
-            if (scope.$parent.mainC.data) {
-                data = scope.$parent.mainC.data;
-            }
-
-            //Sets up projects dropdown button
-            var dropdownProject = $('.dropdown-button');
-            dropdownProject.dropdown({
-                inDuration: 300,
-                outDuration: 225,
-                constrain_width: true, // Does not change width of dropdown to that of the activator
-                hover: false, // Activate on hover
-                gutter: 0, // Spacing from edge
-                belowOrigin: true, // Displays dropdown below the button
-                alignment: 'right' // Displays dropdown with edge aligned to the left of button
-            });
-
-            // To Read Skills From Attribute
-            var skills = data.skills;
-
-            //Generate and append New Card
-            skills.forEach(function (skill) {
-
-                var card = $("<cs-skills-card></cs-skills-card>");
-                card.attr({ 'data-skill': JSON.stringify(skill) });
-                angular.bootstrap(card, [mod.name]);
-                $('.cs-skills-card-wrapper').append(card);
-            });
-        },
-        templateUrl: './views/skills.html'
     };
 });
 "use strict";
@@ -349,6 +252,63 @@ mod.directive("csProjects", function () {
 'use strict';
 
 /**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive('csSkillsCard', function () {
+    return {
+        scope: {
+            skillString: '@skill'
+        },
+        restrict: 'E',
+        link: function link(scope, elm, attrs) {
+
+            // Parses skillString to js object, adds it to scope.skill
+            try {
+                var skill = JSON.parse(scope.skillString);
+                scope.skill = skill;
+            } catch (e) {
+                console.log('Error: ' + e);
+                scope.skill = {};
+            }
+        },
+        templateUrl: './views/skills_card.html'
+    };
+});
+'use strict';
+
+/**
+ * Created by Lance on 1/7/2016.
+ */
+mod.directive('csSkills', function () {
+
+    return {
+        scope: {
+            skills: '&dataSkills'
+        },
+        controller: 'csSkillsCtrl',
+        controllerAs: 'skillsC',
+        restrict: 'E',
+        link: function link(scope) {
+            //Where the data comes from
+
+            //Sets up projects dropdown button
+            var dropdownProject = $('.dropdown-button');
+            dropdownProject.dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: true, // Does not change width of dropdown to that of the activator
+                hover: false, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: true, // Displays dropdown below the button
+                alignment: 'right' // Displays dropdown with edge aligned to the left of button
+            });
+        },
+        templateUrl: './views/skills.html'
+    };
+});
+'use strict';
+
+/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csHome", function () {
@@ -374,7 +334,6 @@ mod.directive("csMain", function () {
         scope: {},
         restrict: 'E',
         link: function link(scope, a, b, $controller) {
-            debugger;
             var data = {};
             if (scope.$parent.mainC.data) {
                 data = scope.$parent.mainC.data;

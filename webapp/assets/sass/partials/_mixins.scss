@@ -15,3 +15,11 @@
   -o-transition: background $timeIn linear;
   transition: background $timeIn linear;
 }
+
+@mixin cs-fade-in-color($timeIn) {
+  -webkit-transition: color $timeIn linear;
+  -moz-transition: color $timeIn linear;
+  -ms-transition: color $timeIn linear;
+  -o-transition: color $timeIn linear;
+  transition: color $timeIn linear;
+}

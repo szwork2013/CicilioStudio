@@ -1,5 +1,5 @@
 
-<cs-skills class="cs-skills">
+<div class="cs-skills">
 
     <div class="container">
         <div class="row">
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col 1 right">
                 <!--Filter Button-->
-                <div class='dropdown-button cs-dropdown-skills-filter-btn btn' data-beloworigin="true" data-activates='dropdown-skills-filter'>
+                <div class='dropdown-button cs-dropdown-skills-filter-btn btn disabled' data-beloworigin="true" data-activates='dropdown-skills-filter'>
                     Filter<i class="material-icons right">arrow_drop_down</i>
                 </div>
 
@@ -26,8 +26,10 @@
 
     <div class="container">
         <div class="row cs-skills-card-wrapper">
-
+            <div ng-repeat="skill in skillsC.data.skills">
+                <cs-skills-card skill="{{skill}}"></cs-skills-card>
+            </div>
         </div>
     </div>
 
-</cs-skills>
+</div>

@@ -6,7 +6,15 @@
          <div class="container cs-full-width">
              <div class="card-action cs-skills-card-chip-holder">
                  <div class="cs-skills-card-text">Related Projects</div>
-                 <div class="row cs-skills-card-projects">
+                    <div class="row cs-skills-card-projects">
+                        <div ng-repeat="project in skill.projects">
+                            <cs-chip
+                                cs-data-image-url="{{project.icon_image}}"
+                                cs-data-link-url="{{project.url}}"
+                                cs-data-name="{{project.name}}">
+                            </cs-chip>
+                        </div>
+                    </div>
                  </div>
              </div>
          </div>

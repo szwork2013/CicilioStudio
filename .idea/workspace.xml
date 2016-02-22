@@ -2,14 +2,239 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="283c6ab8-e37e-499a-b314-09c0d775d730" name="Default" comment="Static Files Now Serving Properly">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/tests/services/DataModelServiceSpec.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/dotnav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-advanced.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-file.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-password.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/form-select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/htmleditor.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/nestable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/notify.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/placeholder.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/progress.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/search.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slidenav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/slideshow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sortable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/components/upload.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.almost-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.almost-flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.gradient.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.gradient.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/css/uikit.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/form-password.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/form-password.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/form-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/form-select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/grid.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/htmleditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/htmleditor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/lightbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/lightbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/nestable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/nestable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/notify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/pagination.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/pagination.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/parallax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/parallax.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/search.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideset.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideshow-fx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideshow-fx.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideshow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/slideshow.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/sortable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/timepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/components/upload.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/alert.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/cover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/cover.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/dropdown.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/grid.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/modal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/nav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/nav.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/offcanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/scrollspy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/smooth-scroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/smooth-scroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/switcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/switcher.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/tab.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/toggle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/toggle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/touch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/touch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/core/utility.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/uikit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/dependencies/uikit-2.21.0/js/uikit.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/angular/app.js" afterPath="$PROJECT_DIR$/target/angular/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/assets/css/style.css" afterPath="$PROJECT_DIR$/target/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/assets/data/data.json" afterPath="$PROJECT_DIR$/target/assets/data/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/views/skills.html" afterPath="$PROJECT_DIR$/target/views/skills.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/views/skills_card.html" afterPath="$PROJECT_DIR$/target/views/skills_card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/controllers/mainCtrl.js" afterPath="$PROJECT_DIR$/webapp/angular/controllers/mainCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/controllers/skillsCtrl.js" afterPath="$PROJECT_DIR$/webapp/angular/controllers/skillsCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/MainDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/MainDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/extras/ChipDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/extras/ChipDir.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsCardDir.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" afterPath="$PROJECT_DIR$/webapp/angular/directives/skills/SkillsDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/angular/routing.js" afterPath="$PROJECT_DIR$/webapp/angular/routing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/assets/data/data.json" afterPath="$PROJECT_DIR$/webapp/assets/data/data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss" afterPath="$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/assets/sass/style.scss" afterPath="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/views/skills.html" afterPath="$PROJECT_DIR$/webapp/views/skills.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/views/skills_card.html" afterPath="$PROJECT_DIR$/webapp/views/skills_card.html" />
     </list>
     <list id="9c5caf0c-3ebf-45df-839e-e815dc5e73a9" name="Failed commit: Default" comment="New Version of CicilioStudio using jquery and css" />
     <ignored path="CicilioStudio.iws" />
@@ -30,136 +255,18 @@
     <favorites_list name="CicilioStudio" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47885492">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mainDir.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/mainDir.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataModelService.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/services/DataModelService.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routing.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/routing.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SkillsCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/SkillsCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="skillsCardDir.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/skillsCardDir.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.110869564">
-                  <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataModelServiceSpec.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/tests/services/DataModelServiceSpec.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="skillsDir.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/skillsDir.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6652174">
-                  <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chipDir.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/angular/directives/extras/chipDir.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chip.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/views/chip.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/assets/data/data.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07606264">
+              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,14 +294,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webapp/views/projects_cards.html" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/ProjectsCardsDir.js" />
         <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.js" />
         <option value="$PROJECT_DIR$/webapp/assets/sass/partials/minins.scss" />
         <option value="$PROJECT_DIR$/webapp/angular/services/BreadcrumbService.js" />
         <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_animations.scss" />
         <option value="$PROJECT_DIR$/webapp/index.html" />
-        <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss" />
         <option value="$PROJECT_DIR$/webapp/angular/_images.scss" />
         <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_images.scss" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/HomeDir.js" />
@@ -210,11 +315,8 @@
         <option value="$PROJECT_DIR$/webapp/views/chip.html" />
         <option value="$PROJECT_DIR$/webapp/views/main.html" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/extras/ChipDir.js" />
-        <option value="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
-        <option value="$PROJECT_DIR$/webapp/views/skills_card.html" />
         <option value="$PROJECT_DIR$/webapp/views/a.html" />
         <option value="$PROJECT_DIR$/webapp/views/life.html" />
-        <option value="$PROJECT_DIR$/webapp/assets/data/data.json" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/MainDir.js" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/skills/lifeCtrl.js" />
         <option value="$PROJECT_DIR$/webapp/angular/controllers/projectsCtrl.js" />
@@ -228,16 +330,21 @@
         <option value="$PROJECT_DIR$/webapp/angular/controllers/lifeCtrl.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/target/angular/app.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/controllers/SkillsCtrl.js" />
         <option value="$PROJECT_DIR$/webapp/angular/services/DataService.js" />
         <option value="$PROJECT_DIR$/webapp/angular/services/DataModelService.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/directives/mainDir.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/routing.js" />
-        <option value="$PROJECT_DIR$/webapp/angular/directives/skills/skillsDir.js" />
-        <option value="$PROJECT_DIR$/webapp/views/skills.html" />
+        <option value="$PROJECT_DIR$/webapp/angular/controllers/SkillsCtrl.js" />
         <option value="$PROJECT_DIR$/webapp/angular/directives/skills/skillsCardDir.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/mainDir.js" />
+        <option value="$PROJECT_DIR$/webapp/views/skills_card.html" />
+        <option value="$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/skills/skillsDir.js" />
+        <option value="$PROJECT_DIR$/webapp/assets/data/data.json" />
+        <option value="$PROJECT_DIR$/webapp/angular/routing.js" />
+        <option value="$PROJECT_DIR$/webapp/angular/directives/extras/chipDir.js" />
+        <option value="$PROJECT_DIR$/webapp/views/skills.html" />
+        <option value="$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss" />
+        <option value="$PROJECT_DIR$/webapp/assets/sass/style.scss" />
       </list>
     </option>
   </component>
@@ -296,6 +403,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,7 +451,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CicilioStudio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CicilioStudio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,8 +490,18 @@
               <option name="myItemId" value="angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="CicilioStudio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CicilioStudio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,70 +515,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skills" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CicilioStudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -853,7 +936,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18331562" sideWeight="0.4957806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3419355" sideWeight="0.5168067" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805908" sideWeight="0.49166667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18331562" sideWeight="0.5042194" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25334707" sideWeight="0.47268906" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.4852941" order="2" side_tool="false" content_ui="tabs" />
@@ -869,6 +951,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805908" sideWeight="0.49166667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -953,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_animations.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/views/projects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
@@ -1014,13 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/wireframes/online/info_mobile_1.PNG">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1052,21 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.653847">
-          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/assets/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/views/lifea.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1081,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/chip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/cs-app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1100,20 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/homeDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14798695">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18498367">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1138,13 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/ProjectsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036996737">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03807391">
@@ -1159,21 +1184,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/angular/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33258426">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/services/DataService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.055434782">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,6 +1195,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.637486">
+          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/services/DataModelService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1193,109 +1221,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/target/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.637486">
-          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.35434783">
+          <caret line="311" column="32" selection-start-line="311" selection-start-column="26" selection-end-line="311" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/services/DataModelService.js">
+    <entry file="file://$PROJECT_DIR$/webapp/views/chip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.03803132">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/directives/mainDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.110869564">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js">
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/homeDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/skills_card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15212528">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.14782609">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01901566">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01901566">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/routing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/extras/chipDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/SkillsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.073913045">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/MainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036956523">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/controllers/ProjectsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.073913045">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/skillsCardDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.110869564">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.092391305">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/angular/directives/skills/skillsDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6652174">
-          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.20326087">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26621923">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/skills_card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17114094">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18478261">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/skills.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1901566">
+          <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/directives/extras/chipDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.425">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/angular/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22173913">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_animations.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3803132">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/partials/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/assets/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5722543">
+          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07606264">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

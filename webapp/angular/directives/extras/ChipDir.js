@@ -17,19 +17,13 @@ mod.directive('csChip', function(){
 
     return {
         scope: {
-            imageUrl: '&dataImageUrl',
-            linkUrl: '&dataLinkUrl',
-            name: '&dataName'
+            imageUrl: '@csDataImageUrl',
+            linkUrl: '@csDataLinkUrl',
+            name: '@csDataName'
         },
         restrict: 'E',
         controller: chipCtrl,
         link: function(scope, elm, attrs){
-            var imageUrl = attrs.imageUrl;
-            var linkUrl = attrs.linkUrl;
-            var name = attrs.name;
-            scope.imageUrl = imageUrl;
-            scope.linkUrl = linkUrl;
-            scope.name = name;
 
             //Icon Tooltips
             $('.tooltipped').tooltip();
