@@ -34,9 +34,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('main.skills', {
             url: '^/skills',
-            template: "<cs-skills></cs-skills>",
-            controller: "csSkillsCtrl",
-            controllerAs: "skillsC"
+            template: "<cs-skills></cs-skills>"
         }).state('main.life', {
             url: '^/life',
             template: "<cs-skills></cs-skills>",

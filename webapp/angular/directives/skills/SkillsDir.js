@@ -4,9 +4,7 @@
 mod.directive('csSkills', function(){
 
     return {
-        scope: {
-            skills: '&dataSkills'
-        },
+        scope: {},
         controller: 'csSkillsCtrl',
         controllerAs: 'skillsC',
         restrict: 'E',

@@ -1,13 +1,33 @@
 {
   "projects": [
     {
-      "name": "trebuchet",
+      "name": "Trebuchet",
       "short_des": "This is my trebuchet short description",
       "description": "This is my trebuchet long description, This is my trebuchet long description, This is my trebuchet long description",
       "github_url": "",
-      "cs_url": "",
+      "cs_url": "main.home",
       "blog": "",
-      "images": "/assets/images/projects/trebuchet",
+      "images": ["/assets/images/projects/trebuchet/trebuchet21.jpg"],
+      "videos": ""
+    },
+    {
+      "name": "Trebuchet",
+      "short_des": "This is my trebuchet short description",
+      "description": "This is my trebuchet long description, This is my trebuchet long description, This is my trebuchet long description",
+      "github_url": "",
+      "cs_url": "main.home",
+      "blog": "",
+      "images": ["/assets/images/projects/trebuchet/trebuchet21.jpg"],
+      "videos": ""
+    },
+    {
+      "name": "Trebuchet",
+      "short_des": "This is my trebuchet short description",
+      "description": "This is my trebuchet long description, This is my trebuchet long description, This is my trebuchet long description",
+      "github_url": "",
+      "cs_url": "main.home",
+      "blog": "",
+      "images": ["/assets/images/projects/trebuchet/trebuchet21.jpg"],
       "videos": ""
     }
   ],

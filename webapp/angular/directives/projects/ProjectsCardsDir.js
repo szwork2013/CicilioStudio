@@ -1,20 +1,32 @@
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csProjectsCards", function(){
+mod.directive("csProjectsCard", function(){
+
+    let projectsCardDirCtrl = ['$state', ($state) => {
+        //Allows Clicks on Chips
+        $('.card').click( function(event) {
+            let ref = $(this).attr('ui-serf'); //ui-serf reference
+            $state.go(ref); //Dynamically goes to different state
+        });
+    }];
+
     return {
-        scope: {},
-        restrict: 'A',
-        link: function($http, scope){
-            scope.projects = {
-                projects : {
-                    title: "nothing"
-                }
-            };
-            //$http.get('/webapp/data/data.json').success(function(data){
-            //    scope.projects = data.projects;
-            //});
+        scope: {
+            projectString: '@csDataProject'
         },
-        templateUrl: './views/projects_cards.html'
+        restrict: 'E',
+        controller: projectsCardDirCtrl,
+        link: (scope) => {
+            // Parses projectString to js object, adds it to scope.project
+            try{
+                let project = JSON.parse(scope.projectString);
+                scope.project = project;
+            }catch (e) {
+                console.log ('Error: ' + e);
+                scope.project = {};
+            }
+        },
+        templateUrl: './views/projects_card.html'
     };
 });

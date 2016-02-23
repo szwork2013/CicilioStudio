@@ -29,7 +29,7 @@ app.use(favicon(__dirname + '/target/assets/images/projects/ciciliostudio/favico
 var cs_ports = {http: 80, https: 443 };
 
 app.get('/*', function(req, res){
-    res.sendFile('target/index.html');
+    res.sendFile(__dirname + '/target/index.html');
 });
 
 httpServer.listen(cs_ports.http, function () {

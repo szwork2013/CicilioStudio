@@ -169,7 +169,20 @@ body {
       }
     }
   }
+}
 
+//Projects
+.cs-projects {
+  .cs-projects-card-wrapper {
+    .cs-projects-card-title {
+      top: 0;
+      font-weight: 500;
+      color: $theme-5;
+      //-webkit-text-fill-color: $theme-3;
+      //-webkit-text-stroke-width: .5px;
+      //-webkit-text-stroke-color: $theme-5;
+    }
+  }
 }
 
 //Custom Image Chip

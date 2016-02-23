@@ -3,7 +3,7 @@
  */
 mod.directive('csChip', function(){
 
-    var chipCtrl = ['$state', function($state){
+    let chipCtrl = ['$state', function($state){
         //Allows Clicks on Chips
         $('.cs-chip').click(function(event){
             var ref = $(this).attr('ui-serf'); //ui-serf reference

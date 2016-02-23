@@ -48,9 +48,7 @@ mod.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         template: "<cs-projects></cs-projects>"
     }).state('main.skills', {
         url: '^/skills',
-        template: "<cs-skills></cs-skills>",
-        controller: "csSkillsCtrl",
-        controllerAs: "skillsC"
+        template: "<cs-skills></cs-skills>"
     }).state('main.life', {
         url: '^/life',
         template: "<cs-skills></cs-skills>",
@@ -170,13 +168,15 @@ mod.controller("csMainCtrl", ['$scope', '$state', 'csDataModel', 'dataResolver',
 /**
  * Created by Lance on 1/31/2016.
  */
-mod.controller("csProjectsCtrl", ['$scope', function ($scope) {}]);
-'use strict';
+mod.controller("csProjectsCtrl", ['csDataModel', function (csDataModel) {
+  this.data = csDataModel.getData();
+}]);
+"use strict";
 
 /**
  * Created by Lance on 1/31/2016.
  */
-mod.controller("csSkillsCtrl", ['$scope', 'csDataModel', function ($scope, csDataModel) {
+mod.controller("csSkillsCtrl", ['csDataModel', function (csDataModel) {
   this.data = csDataModel.getData();
 }]);
 'use strict';
@@ -214,26 +214,38 @@ mod.directive('csChip', function () {
         templateUrl: './views/chip.html'
     };
 });
-"use strict";
+'use strict';
 
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csProjectsCards", function () {
+mod.directive("csProjectsCard", function () {
+
+    var projectsCardDirCtrl = ['$state', function ($state) {
+        //Allows Clicks on Chips
+        $('.card').click(function (event) {
+            var ref = $(this).attr('ui-serf'); //ui-serf reference
+            $state.go(ref); //Dynamically goes to different state
+        });
+    }];
+
     return {
-        scope: {},
-        restrict: 'A',
-        link: function link($http, scope) {
-            scope.projects = {
-                projects: {
-                    title: "nothing"
-                }
-            };
-            //$http.get('/webapp/data/data.json').success(function(data){
-            //    scope.projects = data.projects;
-            //});
+        scope: {
+            projectString: '@csDataProject'
         },
-        templateUrl: './views/projects_cards.html'
+        restrict: 'E',
+        controller: projectsCardDirCtrl,
+        link: function link(scope) {
+            // Parses projectString to js object, adds it to scope.project
+            try {
+                var project = JSON.parse(scope.projectString);
+                scope.project = project;
+            } catch (e) {
+                console.log('Error: ' + e);
+                scope.project = {};
+            }
+        },
+        templateUrl: './views/projects_card.html'
     };
 });
 'use strict';
@@ -245,6 +257,8 @@ mod.directive("csProjects", function () {
     return {
         scope: {},
         restrict: 'E',
+        controller: 'csProjectsCtrl',
+        controllerAs: 'projectsC',
         link: function link(scope) {},
         templateUrl: './views/projects.html'
     };
@@ -282,9 +296,7 @@ mod.directive('csSkillsCard', function () {
 mod.directive('csSkills', function () {
 
     return {
-        scope: {
-            skills: '&dataSkills'
-        },
+        scope: {},
         controller: 'csSkillsCtrl',
         controllerAs: 'skillsC',
         restrict: 'E',
