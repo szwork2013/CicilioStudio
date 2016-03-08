@@ -1,7 +1,8 @@
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csMain", function(){
+mod.directive("csMain", () => {
+
 
     return {
         scope: {},
@@ -14,7 +15,7 @@ mod.directive("csMain", function(){
 
 
             //Sets up mobile side nav
-            var menu = $('.cs-mobile-menu');
+            let menu = $('.cs-mobile-menu');
             menu.sideNav({
                 menuWidth: 200,
                 edge: 'right',
@@ -22,7 +23,7 @@ mod.directive("csMain", function(){
             });
 
             //Sets up projects dropdown button
-            var dropdownProject = $('.dropdown-button');
+            let dropdownProject = $('.dropdown-button');
             dropdownProject.dropdown({
                     inDuration: 300,
                     outDuration: 225,

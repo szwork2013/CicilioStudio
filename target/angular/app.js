@@ -323,18 +323,23 @@ mod.directive('csSkills', function () {
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csHome", function () {
+mod.directive("csHome", ['$rootScope', function ($rootScope) {
     return {
         scope: {},
         restrict: 'E',
-        link: function link(scope) {
+        link: function link(scope, element) {
 
-            //On hover change cs-home background image
+            //Turns Aframe display on when at home and off when not
+            var aframe = $('.a-canvas');
+            $rootScope.$on('$stateChangeStart', function (event, toState) {
+                toState.name == 'main.home' ? aframe.show() : aframe.hide();
+            });
 
+            // IDEA: On hover change cs-home background image
         },
         templateUrl: './views/home.html'
     };
-});
+}]);
 'use strict';
 
 /**

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lance13c/CicilioStudio#readme",
   "dependencies": {
+    "aframe": "^0.1.2",
     "angular-materialize": "^0.1.2",
     "express": "^4.13.3",
     "materialize-css": "^0.97.5",
