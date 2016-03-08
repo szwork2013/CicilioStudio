@@ -18,6 +18,7 @@ var paths = {
     js: ['./webapp/assets/js/**'],
     tests: ['./webapp/tests/**'],
     data: ['./webapp/assets/data/**'],
+    music: ['./webapp/assets/music/**'],
     main: ['./webapp/*.*'],
     dep: ['./webapp/dependencies/**'],
     angular: {
@@ -99,6 +100,11 @@ gulp.task('main', function() {
         .pipe(gulp.dest('./target'));
 });
 
+gulp.task('music', function() {
+    gulp.src(paths.music)
+        .pipe(gulp.dest('./target/assets/music'));
+});
+
 // Copy all static img
 gulp.task('images', function() {
     return gulp.src(paths.images)
@@ -110,6 +116,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.sass_partials, ['sass']);
     gulp.watch(paths.images, ['images']);
+    gulp.watch(paths.music, ['music']);
     gulp.watch(paths.main, ['main']);
     gulp.watch(paths.dep, ['dep']);
     gulp.watch(paths.angular.app, ['angular']);
@@ -123,7 +130,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.tests, ['test']);
 });
 
-gulp.task('default', ['watch', 'views', 'sass', 'images', 'main', 'angular', 'js', 'data']);
+gulp.task('default', ['watch', 'music', 'views', 'sass', 'images', 'main', 'angular', 'js', 'data']);
 
 
 //Testing Build tasks

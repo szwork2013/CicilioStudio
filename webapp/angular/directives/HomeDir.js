@@ -14,6 +14,18 @@ mod.directive("csHome", ['$rootScope', ($rootScope) => {
                 (toState.name == 'main.home') ? aframe.show() : aframe.hide();
             });
 
+            //Star Generator -- NOT PREFERMENT - 14fps
+            //let elm;
+            //for (let x=0; x<10; x++){
+            //    for (let y=0; y<10; y++){
+            //        for (let z=0; z<10; z++) {
+            //            elm = $('<a-star></a-star>');
+            //            elm.attr('position', `${x*10} ${y*10} ${z*10}`);
+            //            $('.cs-home').append(elm);
+            //        }
+            //    }
+            //}
+
             // IDEA: On hover change cs-home background image
 
         },
