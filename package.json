@@ -21,7 +21,9 @@
     "aframe": "^0.1.2",
     "angular-materialize": "^0.1.2",
     "express": "^4.13.3",
+    "gulp-ng-annotate": "^2.0.0",
     "materialize-css": "^0.97.5",
+    "ng-annotate": "^1.2.1",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {

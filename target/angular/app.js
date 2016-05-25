@@ -217,6 +217,22 @@ mod.directive('csChip', function () {
 'use strict';
 
 /**
+ * Created by Lance on 5/24/2016.
+ */
+
+function csVRHome() {
+	'ngInject';
+
+	return {
+		scope: {},
+		restrict: 'E',
+		link: function link(scope, element) {},
+		templateUrl: './views/vr_home.html'
+	};
+}
+'use strict';
+
+/**
  * Created by Lance on 1/4/2016.
  */
 mod.directive("csProjectsCard", function () {

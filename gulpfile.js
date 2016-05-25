@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 var concat = require('gulp-concat');
 var babel = require('gulp-babel');
+var ngAnnotate = require('gulp-ng-annotate');
 
 var paths = {
     sass: ['./webapp/assets/sass/*.scss'],
@@ -39,6 +40,7 @@ gulp.task('angular', function() {
         paths.angular.services, paths.angular.controllers,
         paths.angular.directives
         ])
+	      .pipe(ngAnnotate())
         .pipe(babel({
             presets: ['es2015']
         }))
