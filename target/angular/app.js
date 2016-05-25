@@ -1,13 +1,16 @@
 'use strict';
 
-var mod = angular.module("mod", ['ui.router', 'ui.materialize']);
-mod.directive('csApp', function () {
+var mod = angular.module("mod", ['ui.router', 'ui.materialize', 'csTemplates']);
+
+mod.directive('csApp', ["$templateCache", function ($templateCache) {
+    'ngInject';
+
     return {
         scope: {},
         restrict: 'E',
-        templateUrl: './angular/cs-app.html'
+        template: $templateCache.get('cs-app.html')
     };
-});
+}]);
 
 //cs: cicilio studio
 //Creates the angular app element
@@ -50,6 +53,11 @@ mod.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         url: '^/skills',
         template: "<cs-skills></cs-skills>"
     }).state('main.life', {
+        url: '^/life',
+        template: "<cs-skills></cs-skills>",
+        controller: "csSkillsCtrl",
+        controllerAs: "skillsC"
+    }).state('main.experience', {
         url: '^/life',
         template: "<cs-skills></cs-skills>",
         controller: "csSkillsCtrl",
@@ -184,7 +192,8 @@ mod.controller("csSkillsCtrl", ['csDataModel', function (csDataModel) {
 /**
  * Created by Lance on 1/8/2016.
  */
-mod.directive('csChip', function () {
+mod.directive('csChip', function ($templateCache) {
+    'ngInject';
 
     var chipCtrl = ['$state', function ($state) {
         //Allows Clicks on Chips
@@ -211,7 +220,7 @@ mod.directive('csChip', function () {
             //Icon Tooltips
             $('.tooltipped').tooltip();
         },
-        templateUrl: './views/chip.html'
+        template: $templateCache.get('chip.html')
     };
 });
 'use strict';
@@ -220,14 +229,15 @@ mod.directive('csChip', function () {
  * Created by Lance on 5/24/2016.
  */
 
-function csVRHome() {
+csVRHome.$inject = ["$templateCache"];
+function csVRHome($templateCache) {
 	'ngInject';
 
 	return {
 		scope: {},
 		restrict: 'E',
 		link: function link(scope, element) {},
-		templateUrl: './views/vr_home.html'
+		template: $templateCache.get('vr_home.html')
 	};
 }
 'use strict';
@@ -235,15 +245,54 @@ function csVRHome() {
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csProjectsCard", function () {
+mod.directive("csHome", function ($rootScope, $templateCache) {
+    'ngInject';
 
-    var projectsCardDirCtrl = ['$state', function ($state) {
+    return {
+        scope: {},
+        restrict: 'E',
+        link: function link(scope, element) {
+
+            //Turns Aframe display on when at home and off when not
+            var aframe = $('.a-canvas');
+            $rootScope.$on('$stateChangeStart', function (event, toState) {
+                toState.name == 'main.home' ? aframe.show() : aframe.hide();
+            });
+
+            //Star Generator -- NOT PREFERMENT - 14fps
+            //let elm;
+            //for (let x=0; x<10; x++){
+            //    for (let y=0; y<10; y++){
+            //        for (let z=0; z<10; z++) {
+            //            elm = $('<a-star></a-star>');
+            //            elm.attr('position', `${x*10} ${y*10} ${z*10}`);
+            //            $('.cs-home').append(elm);
+            //        }
+            //    }
+            //}
+
+            // IDEA: On hover change cs-home background image
+        },
+        template: $templateCache.get('home.html')
+    };
+});
+'use strict';
+
+/**
+ * Created by Lance on 1/4/2016.
+ */
+mod.directive("csProjectsCard", function ($templateCache) {
+    'ngInject';
+
+    var projectsCardDirCtrl = function projectsCardDirCtrl($state) {
+        'ngInject';
         //Allows Clicks on Chips
+
         $('.card').click(function (event) {
             var ref = $(this).attr('ui-serf'); //ui-serf reference
             $state.go(ref); //Dynamically goes to different state
         });
-    }];
+    };
 
     return {
         scope: {
@@ -261,7 +310,7 @@ mod.directive("csProjectsCard", function () {
                 scope.project = {};
             }
         },
-        templateUrl: './views/projects_card.html'
+        templateUrl: $templateCache.get('projects_card.html')
     };
 });
 'use strict';
@@ -269,14 +318,16 @@ mod.directive("csProjectsCard", function () {
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive("csProjects", function () {
+mod.directive("csProjects", function ($templateCache) {
+    'ngInject';
+
     return {
         scope: {},
         restrict: 'E',
         controller: 'csProjectsCtrl',
         controllerAs: 'projectsC',
         link: function link(scope) {},
-        templateUrl: './views/projects.html'
+        template: $templateCache.get('./views/projects.html')
     };
 });
 'use strict';
@@ -284,7 +335,9 @@ mod.directive("csProjects", function () {
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive('csSkillsCard', function () {
+mod.directive('csSkillsCard', function ($templateCache) {
+    'ngInject';
+
     return {
         scope: {
             skillString: '@skill'
@@ -301,7 +354,7 @@ mod.directive('csSkillsCard', function () {
                 scope.skill = {};
             }
         },
-        templateUrl: './views/skills_card.html'
+        template: $templateCache.get('skills_card.html')
     };
 });
 'use strict';
@@ -309,7 +362,8 @@ mod.directive('csSkillsCard', function () {
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive('csSkills', function () {
+mod.directive('csSkills', function ($templateCache) {
+    'ngInject';
 
     return {
         scope: {},
@@ -331,7 +385,7 @@ mod.directive('csSkills', function () {
                 alignment: 'right' // Displays dropdown with edge aligned to the left of button
             });
         },
-        templateUrl: './views/skills.html'
+        template: $templateCache.get('skills.html')
     };
 });
 'use strict';
@@ -339,41 +393,8 @@ mod.directive('csSkills', function () {
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csHome", ['$rootScope', function ($rootScope) {
-            return {
-                        scope: {},
-                        restrict: 'E',
-                        link: function link(scope, element) {
-
-                                    //Turns Aframe display on when at home and off when not
-                                    var aframe = $('.a-canvas');
-                                    $rootScope.$on('$stateChangeStart', function (event, toState) {
-                                                toState.name == 'main.home' ? aframe.show() : aframe.hide();
-                                    });
-
-                                    //Star Generator -- NOT PREFERMENT - 14fps
-                                    //let elm;
-                                    //for (let x=0; x<10; x++){
-                                    //    for (let y=0; y<10; y++){
-                                    //        for (let z=0; z<10; z++) {
-                                    //            elm = $('<a-star></a-star>');
-                                    //            elm.attr('position', `${x*10} ${y*10} ${z*10}`);
-                                    //            $('.cs-home').append(elm);
-                                    //        }
-                                    //    }
-                                    //}
-
-                                    // IDEA: On hover change cs-home background image
-                        },
-                        templateUrl: './views/home.html'
-            };
-}]);
-'use strict';
-
-/**
- * Created by Lance on 1/4/2016.
- */
-mod.directive("csMain", function () {
+mod.directive("csMain", function ($templateCache) {
+    'ngInject';
 
     return {
         scope: {},
@@ -412,6 +433,6 @@ mod.directive("csMain", function () {
                 window.history.back();
             });
         },
-        templateUrl: './views/main.html'
+        template: $templateCache.get('main.html')
     };
 });

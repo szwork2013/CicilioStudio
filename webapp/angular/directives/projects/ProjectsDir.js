@@ -1,13 +1,14 @@
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive("csProjects", () => {
+mod.directive("csProjects", ($templateCache) => {
+    'ngInject'
     return {
         scope: {},
         restrict: 'E',
         controller: 'csProjectsCtrl',
         controllerAs: 'projectsC',
         link: function(scope){},
-        templateUrl: './views/projects.html'
+        template: $templateCache.get('./views/projects.html')
     };
 });

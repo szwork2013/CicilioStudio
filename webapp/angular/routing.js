@@ -40,6 +40,11 @@ mod.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             template: "<cs-skills></cs-skills>",
             controller: "csSkillsCtrl",
             controllerAs: "skillsC"
+        }).state('main.experience', {
+              url: '^/life',
+              template: "<cs-skills></cs-skills>",
+              controller: "csSkillsCtrl",
+              controllerAs: "skillsC"
     });
     $urlRouterProvider.otherwise("/");
 }]);

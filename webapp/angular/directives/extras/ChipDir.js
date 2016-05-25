@@ -1,7 +1,8 @@
 /**
  * Created by Lance on 1/8/2016.
  */
-mod.directive('csChip', function(){
+mod.directive('csChip', ($templateCache) => {
+    'ngInject'
 
     let chipCtrl = ['$state', function($state){
         //Allows Clicks on Chips
@@ -28,6 +29,6 @@ mod.directive('csChip', function(){
             //Icon Tooltips
             $('.tooltipped').tooltip();
         },
-        templateUrl: './views/chip.html'
+        template: $templateCache.get('chip.html')
     }
 });

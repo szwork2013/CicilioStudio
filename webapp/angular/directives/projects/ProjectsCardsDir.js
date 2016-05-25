@@ -1,15 +1,17 @@
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csProjectsCard", function(){
+mod.directive("csProjectsCard", ($templateCache) => {
+	'ngInject'
 
-    let projectsCardDirCtrl = ['$state', ($state) => {
+    let projectsCardDirCtrl = ($state) => {
+        'ngInject'
         //Allows Clicks on Chips
         $('.card').click( function(event) {
             let ref = $(this).attr('ui-serf'); //ui-serf reference
             $state.go(ref); //Dynamically goes to different state
         });
-    }];
+    };
 
     return {
         scope: {
@@ -27,6 +29,6 @@ mod.directive("csProjectsCard", function(){
                 scope.project = {};
             }
         },
-        templateUrl: './views/projects_card.html'
+        templateUrl: $templateCache.get('projects_card.html')
     };
 });

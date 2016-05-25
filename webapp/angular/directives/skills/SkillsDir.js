@@ -1,7 +1,8 @@
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive('csSkills', function(){
+mod.directive('csSkills', ($templateCache) => {
+  'ngInject'
 
     return {
         scope: {},
@@ -25,6 +26,6 @@ mod.directive('csSkills', function(){
             );
 
         },
-        templateUrl: './views/skills.html'
+        template: $templateCache.get('skills.html')
     }
 });

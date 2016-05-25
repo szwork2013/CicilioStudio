@@ -1,7 +1,9 @@
 /**
  * Created by Lance on 1/7/2016.
  */
-mod.directive('csSkillsCard', () => {
+mod.directive('csSkillsCard', ($templateCache) => {
+    'ngInject'
+
     return {
         scope: {
             skillString: '@skill'
@@ -19,6 +21,6 @@ mod.directive('csSkillsCard', () => {
             }
 
         },
-        templateUrl: './views/skills_card.html'
+        template: $templateCache.get('skills_card.html')
     }
 });

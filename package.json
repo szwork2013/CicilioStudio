@@ -33,7 +33,9 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.4.0",
+    "gulp-ng-html2js": "^0.2.2",
     "gulp-sass": "^2.1.1",
+    "gulp-usemin": "^0.3.23",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.21",
     "node-sass": "^3.4.2"

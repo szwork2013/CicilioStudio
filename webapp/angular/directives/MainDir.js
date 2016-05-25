@@ -1,8 +1,8 @@
 /**
  * Created by Lance on 1/4/2016.
  */
-mod.directive("csMain", () => {
-
+mod.directive("csMain", ($templateCache) => {
+  'ngInject'
 
     return {
         scope: {},
@@ -43,6 +43,6 @@ mod.directive("csMain", () => {
                 window.history.back();
             });
         },
-        templateUrl: './views/main.html'
+        template: $templateCache.get('main.html')
     };
 });
